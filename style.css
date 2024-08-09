@@ -1,0 +1,77 @@
+/* Colors */
+:root {
+    --mainColor: #3498db;
+    --secondaryColor: #F08700;
+    --Color1: #BBDEF0;
+    --Color2: #ffffff;
+    --Color3: #2c3e50;
+  }
+
+
+/* Sizes */
+
+/* Body */
+body{
+    background-color: #282423 !important;
+}
+
+
+/* Header */
+.navbar-bg{
+    background-color: #282423;
+}
+
+.nav-item a{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.promo{
+    display: flex;
+    flex-direction: column;
+    background-image: url("./assets/images/image.png");
+    background-size: cover;
+    height: 63rem;
+}
+
+.promo h1{
+    font-size: 4rem;
+    margin: 30rem 0 0 7.5%;
+}
+
+.promo button{
+    padding: 0px 50px;
+    height: 4rem;
+    width: 380px;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    margin: 10rem 0 0 7.5%;
+}
+
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
+}
+
+#Contactos{
+    height: 20rem;
+    display: inline-flex;
+    background-color: white;
+    align-items: center;
+}
+
+#Contactos p{
+    margin-left: 10%;
+    font-size: 3rem;
+}
+
+#Contactos button{
+    height: 5rem;
+    font-size: 2rem;
+    width: 20%;
+    margin-left: 10%;
+}
