@@ -75,3 +75,15 @@ main{
     width: 20%;
     margin-left: 10%;
 }
+
+
+/* Fotter*/
+.footer-container{
+    margin: 0 7.5% 0 7.5%;
+}
+footer p{
+    color: white;
+}
+footer img{
+    height: 70px;
+}
