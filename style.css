@@ -1,14 +1,12 @@
 /* Colors */
 :root {
-    --mainColor: #3498db;
+    --mainColor: #FFD700;
     --secondaryColor: #F08700;
     --Color1: #BBDEF0;
     --Color2: #ffffff;
     --Color3: #2c3e50;
   }
 
-
-/* Sizes */
 
 /* Body */
 body{
@@ -29,7 +27,7 @@ body{
 .promo{
     display: flex;
     flex-direction: column;
-    background-image: url("./assets/images/image.png");
+    background-image: url("./assets/images/hero2.jpg");
     background-size: cover;
     height: 63rem;
 }
@@ -57,27 +55,8 @@ main{
     width: 85%;
 }
 
-#Contactos{
-    height: 20rem;
-    display: inline-flex;
-    background-color: white;
-    align-items: center;
-}
 
-#Contactos p{
-    margin-left: 10%;
-    font-size: 3rem;
-}
-
-#Contactos button{
-    height: 5rem;
-    font-size: 2rem;
-    width: 20%;
-    margin-left: 10%;
-}
-
-
-/* Fotter*/
+/* Fotter */
 .footer-container{
     margin: 0 7.5% 0 7.5%;
 }
@@ -86,4 +65,148 @@ footer p{
 }
 footer img{
     height: 70px;
+}
+footer a{
+    font-size: 1rem !important;
+}
+
+
+/* Home */
+/* Section Contactos */
+.contactos{
+    height: 20rem;
+    display: inline-flex;
+    background-color: white;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.contactos p{
+    margin-left: 10%;
+    font-size: 3rem;
+}
+
+.contactos button{
+    height: 5rem;
+    font-size: 2rem;
+    width: 20%;
+    margin-left: 10%;
+}
+
+
+/* Section Serviços */
+.titulo h1{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.cardServicos{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.cardServicos .card{
+    width: 24rem;
+}
+
+
+/* Section Transfers */
+.titulo h1{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.cardTransfers{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.cardTransfers .card{
+    width: 32.5rem;
+}
+
+
+/* Section Tours */
+.titulo h1{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.cardTour{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.cardTour .card{
+    width: 24rem;
+}
+
+
+
+/* Sobre */
+.main-about{
+    margin-top: 5%;
+    color: white;
+    text-align: justify;
+}
+
+.c-img{
+    height: 35rem;
+    object-fit:cover;
+}
+
+
+/* Serviços */
+.tabs{
+    display: inline-flex !important;
+}
+
+
+
+
+
+/* Preços */
+
+
+
+
+
+/* Contactos */
+.mapa iframe{
+    border-radius:12px;
+    margin-top: 120px;
+}
+
+.mapaContactos{
+    margin-top: 40px;
+}
+
+.mapaContactos h1{
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.mapaContactos p{
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.infoDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.info{
+    display: inline-flex;
+}
+
+.info svg{
+    height: 2rem;
+    margin-right: 15px;
+    fill: var(--mainColor);
 }
