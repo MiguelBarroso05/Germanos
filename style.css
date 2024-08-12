@@ -1,49 +1,126 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@font-face {
+    font-family: 'Caviar';
+    src: url('./assets/fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaviarBold';
+    src: url('./assets/fonts/caviar_dreams/CaviarDreams_Bold.ttf') format('truetype');
+    font-weight: Bold;
+    font-style: normal;
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
 /* Colors */
 :root {
-    --mainColor: #FFD700;
-    --secondaryColor: #F08700;
+    --mainColor: #282423;
+    --secondaryColor: #E6AB33;
     --Color1: #BBDEF0;
     --Color2: #ffffff;
     --Color3: #2c3e50;
-  }
+}
 
 
 /* Body */
 body{
+    font-family: 'Caviar', sans-serif !important;
     background-color: #282423 !important;
+}
+
+.buttons{
+    border: 0;
+    height: 4rem;
+    width: 340px;
+    border-radius: 12px;
+}
+
+.buttons:hover{
+    color: white;
+    background-color: var(--secondaryColor); 
+    transition: 0.4s;
+}
+
+.titulo h1{
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 4rem;
+}
+
+footer{
+    margin-top: 4rem;
 }
 
 
 /* Header */
+.navbar{
+    padding: 0 !important;
+}
+
 .navbar-bg{
     background-color: #282423;
 }
 
 .nav-item a{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
 }
 
 .promo{
+    z-index: 0;
     display: flex;
     flex-direction: column;
-    background-image: url("./assets/images/hero2.jpg");
+    background-image: url("./assets/images/hero3.jpg");
+    filter: grayscale(); /*Provisorio*/
     background-size: cover;
+    background-position: center;
     height: 63rem;
+    transition: opacity 0.7s ease-in-out; 
 }
 
-.promo h1{
-    font-size: 4rem;
+.promo.fade-out {
+    opacity: 0;
+}
+
+.promo.fade-in {
+    opacity: 1;
+}
+
+.promoInfo{ 
+    z-index: 1;
+    position: absolute;
+    top: 0rem;
+    width: 100%;
+}
+
+.promoInfo h1{ 
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--mainColor);
+    font-size: 5rem;
     margin: 30rem 0 0 7.5%;
+    font-family: 'lobster' !important;
 }
 
-.promo button{
-    padding: 0px 50px;
-    height: 4rem;
-    width: 380px;
-    border-radius: 12px;
-    font-size: 1.8rem;
-    margin: 10rem 0 0 7.5%;
+.promoInfo button{
+    font-size: 1.7rem;
+    margin: 7rem 0 0 7.5%;
+}
+
+.promoInfo button:hover{
+    transition: 0.4s;
+    background-color: var(--secondaryColor); 
+    color: white;
 }
 
 
@@ -51,7 +128,7 @@ body{
 main{
     display: flex;
     flex-direction: column;
-    margin-left: 7.5%;
+    margin: 2% 0 0 7.5% ;
     width: 85%;
 }
 
@@ -74,16 +151,26 @@ footer a{
 /* Home */
 /* Section Contactos */
 .contactos{
-    height: 20rem;
     display: inline-flex;
-    background-color: white;
     align-items: center;
-    margin: 2rem 0;
+    height: 20rem;
+    border-radius: 6px;
+    background-image: url("./assets/images/golf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 60% right;
+    background-color: white;
+    margin: 2rem 0 0 0;
+}
+
+.contactos h5{
+    margin-left: 10%;
+    font-size:2.7rem;
 }
 
 .contactos p{
     margin-left: 10%;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .contactos button{
@@ -95,11 +182,6 @@ footer a{
 
 
 /* Section Serviços */
-.titulo h1{
-    font-size: 2rem;
-    color: #ffffff;
-}
-
 .cardServicos{
     width: 100%;
     display: inline-flex;
@@ -108,17 +190,27 @@ footer a{
 
 .cardServicos .card{
     width: 24rem;
+    height: 27rem;
+}
+
+.card-img-top{
+    overflow: hidden;
+}
+
+.card-img-top img:hover{
+    transform: scale(1.2);
+}
+
+.images{
+    height: 25rem;
+    transition: transform 0.4s ease-in-out;   
 }
 
 
 /* Section Transfers */
-.titulo h1{
-    font-size: 2rem;
-    color: #ffffff;
-}
-
 .cardTransfers{
     width: 100%;
+    height: 24rem;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -127,13 +219,7 @@ footer a{
     width: 32.5rem;
 }
 
-
 /* Section Tours */
-.titulo h1{
-    font-size: 2rem;
-    color: #ffffff;
-}
-
 .cardTour{
     width: 100%;
     display: inline-flex;
@@ -142,6 +228,7 @@ footer a{
 
 .cardTour .card{
     width: 24rem;
+    height: 27rem;
 }
 
 
@@ -177,7 +264,7 @@ footer a{
 /* Contactos */
 .mapa iframe{
     border-radius:12px;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .mapaContactos{
@@ -206,7 +293,8 @@ footer a{
 }
 
 .info svg{
+    border-radius: 6px;
     height: 2rem;
     margin-right: 15px;
-    fill: var(--mainColor);
+    background: linear-gradient(45deg, #ffd700, #ffffff, #ffcc00, #a58400);
 }
