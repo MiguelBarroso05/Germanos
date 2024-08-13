@@ -16,8 +16,8 @@
         <nav class="navbar navbar-bg navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./assets/images/Logo-sem-fundo.png" alt=""
-                    style="height: 80px;"></a>
-                    
+                        style="height: 80px;"></a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
 
                         <li class="nav-item">
@@ -35,7 +35,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Serviços</a>
+                            <a class="nav-link fw-bold" aria-current="page" href="services.html">Serviços</a>
                         </li>
 
                         <li class="nav-item">
@@ -46,14 +46,13 @@
                             <a class="nav-link" href="contacts.html">Contactos</a>
                         </li>
 
-
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                                aria-expanded="false" style="color: white;">
                                 Idioma
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Portugês</a></li>
+                                <li><a class="dropdown-item" href="#">Português</a></li>
                                 <li><a class="dropdown-item" href="#">Inglês</a></li>
                             </ul>
                         </li>
@@ -64,12 +63,12 @@
         </nav>
     </header>
 
-    <main style="width: 100% !important; margin: 0%;">
+    <main class="mainServicos">
         <section class="servicos" style="margin-top: 100px;">
             <div class="container" style="margin: 0 !important; width: 100% !important; max-width: 1920px;">
                 <div class="row">
-                    <!-- Sidebar -->
-                    <div class="col-md-3" style="width: 9%; margin-top: 13%;">
+
+                    <div class="col-md-3 sidebar">
                         <div class="list-group" id="main-tab" role="tablist">
                             <a class="list-group-item list-group-item-action active" id="list-servicos-list" data-bs-toggle="tab" href="#servicos" role="tab">Serviços</a>
                             <a class="list-group-item list-group-item-action" id="list-transfers-list" data-bs-toggle="tab" href="#transfers" role="tab">Transfers</a>
@@ -77,76 +76,79 @@
                         </div>
                     </div>
         
-                    <!-- Conteúdo Principal -->
-                    <div class="col-md-12" style="width: 82% !important;">
+                    <div class="col-md-12 tabs">
                         <div class="tab-content" id="main-tabContent">
-                            <!-- Conteúdo "Serviços" -->
+                            <!-- Conteúdo Serviços -->
                             <div class="tab-pane fade show active" id="servicos" role="tabpanel" aria-labelledby="list-servicos-list">
                                 <ul class="nav nav-tabs" id="servicosTab" role="tablist">
                                     <li class="nav-item">
-                                        <button class="nav-link active" id="transporte-rodoviario-tab" data-bs-toggle="tab" data-bs-target="#transporte-rodoviario" type="button" role="tab" aria-controls="transporte-rodoviario" aria-selected="true">Transporte Rodoviário</button>
+                                        <button class="nav-link active" id="servico-rodoviario-tab" data-bs-toggle="tab" data-bs-target="#servico-rodoviario" type="button" role="tab" aria-controls="servico-rodoviario" aria-selected="true">Serviço Rodoviário</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="nav-link" id="transporte-maritimo-tab" data-bs-toggle="tab" data-bs-target="#transporte-maritimo" type="button" role="tab" aria-controls="transporte-maritimo" aria-selected="false">Transporte Marítimo</button>
+                                        <button class="nav-link" id="servico-maritimo-tab" data-bs-toggle="tab" data-bs-target="#servico-maritimo" type="button" role="tab" aria-controls="servico-maritimo" aria-selected="false">Serviço Marítimo</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="nav-link" id="transporte-aereo-tab" data-bs-toggle="tab" data-bs-target="#transporte-aereo" type="button" role="tab" aria-controls="transporte-aereo" aria-selected="false">Transporte Aéreo</button>
+                                        <button class="nav-link" id="servico-aereo-tab" data-bs-toggle="tab" data-bs-target="#servico-aereo" type="button" role="tab" aria-controls="servico-aereo" aria-selected="false">Serviço Aéreo</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="nav-link" id="transporte-concierge-tab" data-bs-toggle="tab" data-bs-target="#transporte-concierge" type="button" role="tab" aria-controls="transporte-concierge" aria-selected="false">Transporte Concierge</button>
+                                        <button class="nav-link" id="servico-concierge-tab" data-bs-toggle="tab" data-bs-target="#servico-concierge" type="button" role="tab" aria-controls="servico-concierge" aria-selected="false">Serviço Concierge</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="golf-tab" data-bs-toggle="tab" data-bs-target="#golf" type="button" role="tab" aria-controls="golf" aria-selected="false">Serviço Golf</button>
                                     </li>
                                 </ul>
         
-                                <div class="tab-content mt-3">
-                                    <div class="tab-pane fade show active" id="transporte-rodoviario" role="tabpanel" aria-labelledby="transporte-rodoviario-tab">
-                                        <img src="caminho/para/sua/imagem.jpg" class="img-fluid" alt="Transporte Rodoviário">
-                                        <h2>Transporte Rodoviário</h2>
+                                <div class="tab-content mt-3 servicosConteudo">
+                                    <div class="tab-pane fade show active" id="servico-rodoviario" role="tabpanel" aria-labelledby="servico-rodoviario-tab">
+                                        <img src="caminho/para/sua/imagem.jpg" class="img-fluid">
+                                        <h2>Serviço Rodoviário</h2>
                                         <p>Informações sobre o transporte rodoviário...</p>
                                     </div>
-                                    <div class="tab-pane fade" id="transporte-maritimo" role="tabpanel" aria-labelledby="transporte-maritimo-tab">
-                                        <img src="caminho/para/sua/imagem2.jpg" class="img-fluid" alt="Transporte Marítimo">
-                                        <h2>Transporte Marítimo</h2>
+
+                                    <div class="tab-pane fade" id="servico-maritimo" role="tabpanel" aria-labelledby="servico-maritimo-tab">
+                                        <img src="caminho/para/sua/imagem2.jpg" class="img-fluid">
+                                        <h2>Serviço Marítimo</h2>
                                         <p>Informações sobre o transporte marítimo...</p>
                                     </div>
-                                    <div class="tab-pane fade" id="transporte-aereo" role="tabpanel" aria-labelledby="transporte-aereo-tab">
-                                        <img src="caminho/para/sua/imagem3.jpg" class="img-fluid" alt="Transporte Aéreo">
-                                        <h2>Transporte Aéreo</h2>
+
+                                    <div class="tab-pane fade" id="servico-aereo" role="tabpanel" aria-labelledby="servico-aereo-tab">
+                                        <img src="caminho/para/sua/imagem3.jpg" class="img-fluid">
+                                        <h2>Serviço Aéreo</h2>
                                         <p>Informações sobre o transporte aéreo...</p>
                                     </div>
-                                    <div class="tab-pane fade" id="transporte-concierge" role="tabpanel" aria-labelledby="transporte-concierge-tab">
-                                        <img src="caminho/para/sua/imagem4.jpg" class="img-fluid" alt="Transporte Concierge">
-                                        <h2>Transporte Concierge</h2>
+
+                                    <div class="tab-pane fade" id="servico-concierge" role="tabpanel" aria-labelledby="servico-concierge-tab">
+                                        <img src="caminho/para/sua/imagem4.jpg" class="img-fluid">
+                                        <h2>Serviço Concierge</h2>
                                         <p>Informações sobre o transporte concierge...</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="golf" role="tabpanel" aria-labelledby="golf-tab">
+                                        <img src="caminho/para/sua/imagem4.jpg" class="img-fluid">
+                                        <h2>Serviço Golf</h2>
+                                        <p>Informações sobre o serviço de golf...</p>
                                     </div>
                                 </div>
                             </div>
         
-                            <!-- Conteúdo "Transfers" -->
+                            <!-- Conteúdo Transfers -->
                             <div class="tab-pane fade" id="transfers" role="tabpanel" aria-labelledby="list-transfers-list">
                                 <ul class="nav nav-tabs" id="transfersTab" role="tablist">
                                     <li class="nav-item">
-                                        <button class="nav-link active" id="transfer-vip-tab" data-bs-toggle="tab" data-bs-target="#transfer-vip" type="button" role="tab" aria-controls="transfer-vip" aria-selected="true">Transfer VIP</button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button class="nav-link" id="transfer-standard-tab" data-bs-toggle="tab" data-bs-target="#transfer-standard" type="button" role="tab" aria-controls="transfer-standard" aria-selected="false">Transfer Standard</button>
+                                        <button class="nav-link active" id="transfer-vip-tab" data-bs-toggle="tab" data-bs-target="#transfer-vip" type="button" role="tab" aria-controls="transfer-vip" aria-selected="true">Transfers</button>
                                     </li>
                                 </ul>
         
                                 <div class="tab-content mt-3">
                                     <div class="tab-pane fade show active" id="transfer-vip" role="tabpanel" aria-labelledby="transfer-vip-tab">
-                                        <img src="caminho/para/sua/imagem5.jpg" class="img-fluid" alt="Transfer VIP">
-                                        <h2>Transfer VIP</h2>
-                                        <p>Informações sobre o Transfer VIP...</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="transfer-standard" role="tabpanel" aria-labelledby="transfer-standard-tab">
-                                        <img src="caminho/para/sua/imagem6.jpg" class="img-fluid" alt="Transfer Standard">
-                                        <h2>Transfer Standard</h2>
-                                        <p>Informações sobre o Transfer Standard...</p>
+                                        <img src="caminho/para/sua/imagem5.jpg" class="img-fluid">
+                                        <h2>Transfers</h2>
+                                        <p>Informações sobre o Transfer...</p>
                                     </div>
                                 </div>
                             </div>
         
-                            <!-- Conteúdo "Tours" -->
+                            <!-- Conteúdo Tours -->
                             <div class="tab-pane fade" id="tours" role="tabpanel" aria-labelledby="list-tours-list">
                                 <ul class="nav nav-tabs" id="toursTab" role="tablist">
                                     <li class="nav-item">
@@ -155,18 +157,76 @@
                                     <li class="nav-item">
                                         <button class="nav-link" id="tour-sintra-tab" data-bs-toggle="tab" data-bs-target="#tour-sintra" type="button" role="tab" aria-controls="tour-sintra" aria-selected="false">Tour Sintra</button>
                                     </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-estoril-tab" data-bs-toggle="tab" data-bs-target="#tour-estoril" type="button" role="tab" aria-controls="tour-estoril" aria-selected="false">Tour Estoril</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-fatima-tab" data-bs-toggle="tab" data-bs-target="#tour-fatima" type="button" role="tab" aria-controls="tour-fatima" aria-selected="false">Tour Fátima</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-tomar-tab" data-bs-toggle="tab" data-bs-target="#tour-tomar" type="button" role="tab" aria-controls="tour-tomar" aria-selected="false">Tour Tomar</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-arrabida-tab" data-bs-toggle="tab" data-bs-target="#tour-arrabida" type="button" role="tab" aria-controls="tour-arrabida" aria-selected="false">Tour Arrábida</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-evora-tab" data-bs-toggle="tab" data-bs-target="#tour-evora" type="button" role="tab" aria-controls="tour-evora" aria-selected="false">Tour Évora</button>
+                                    </li>
                                 </ul>
         
                                 <div class="tab-content mt-3">
-                                    <div class="tab-pane fade show active" id="tour-lisboa" role="tabpanel" aria-labelledby="tour-lisboa-tab">
-                                        <img src="caminho/para/sua/imagem7.jpg" class="img-fluid" alt="Tour Lisboa">
-                                        <h2>Tour Lisboa</h2>
-                                        <p>Informações sobre o Tour Lisboa...</p>
+                                    <div class="tab-pane fade show active servicosConteudo" id="tour-lisboa" role="tabpanel" aria-labelledby="tour-lisboa-tab">
+                                        <img src="assets/images/lisbon-tour.jpg" class="img-fluid">
+                                        <div>
+                                            <h2>Tour Lisboa</h2>
+                                            <p>Conheça a alma de Lisboa, visitando o Castelo de São Jorge, a Sé Catedral e a igreja de Santo António, ou então passeie sem rumo pelas estreitas e tortuosas ruas de Alfama descendo até à Casa dos Bicos, sede da Fundação Saramago. Com passagem na Praça do Comércio, porta de entrada da cidade pelo rio Tejo, chegamos ao Chiado e Bairro Alto, dois dos mais carismáticos bairros da boémia alfacinha. Seguimos para o Parlamento e Casa de Fernando Pessoa a caminho de Belém, onde vamos saborear os famosos pastéis de Belém, entrar no Museu dos Coches e Mosteiro dos Jerónimos, continuando até à Torre de Belém e ao Padrão dos Descobrimentos.
+
+                                                Se desejar, podemos levá-lo a ver o Oceanário, no Parque das Nações, ou conduzi-lo aos museus que mais lhe interessarem, como o museu Gulbenkian, o de Arte Antiga, ou o do Azulejo.
+                                                
+                                                Lisboa (4 Horas)
+                                                
+                                                Encontro com os clientes na receção do hotel. Saída em direção ao Parque Eduardo VII (paragem), continuação pelo Marquês de Pombal, Rossio, Praça do Comércio, Sé Catedral (paragem), Igreja de St.º António (local do seu nascimento), Castelo de S. Jorge e Miradouro da Sra. do Monte (paragem), Mosteiro de S. Vicente de Fora, Alfama, Casa dos Bicos (Fundação Saramago, onde estão as cinzas do escritor), Largo do Chiado, S. Bento, Basílica da Estrela, Infante Santo e Bairro de Belém (degustação dos pastéis e visita ao Mosteiro dos Jerónimos, Torre de Belém e Padrão dos Descobrimentos).Retorno ao hotel.
+                                                
+                                                Dia Inteiro Lisboa (9 horas)
+                                                
+                                                Encontro com os clientes na receção do hotel. Saída em direção ao Parque Eduardo VII (paragem), continuação pelo Marquês de Pombal, Rossio, Praça do Comércio, Sé Catedral (paragem), Igreja de St.º António (local de nascimento), Castelo de S. Jorge e Miradouro da Sra. do Monte (paragem). Mosteiro de S. Vicente de Fora, Alfama, Casa dos Bicos (Fundação Saramago, onde estão as cinzas do escritor), Largo do Chiado, S. Bento, Basílica da Estrela, Infante Santo e Bairro de Belém (degustação dos Pastéis e visita ao Mosteiro dos Jerónimos, Torre de Belém e Padrão dos Descobrimentos). Almoço livre.</p>
+                                        </div>
                                     </div>
+
                                     <div class="tab-pane fade" id="tour-sintra" role="tabpanel" aria-labelledby="tour-sintra-tab">
-                                        <img src="caminho/para/sua/imagem8.jpg" class="img-fluid" alt="Tour Sintra">
+                                        <img src="caminho/para/sua/imagem8.jpg" class="img-fluid">
                                         <h2>Tour Sintra</h2>
                                         <p>Informações sobre o Tour Sintra...</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-estoril" role="tabpanel" aria-labelledby="tour-estoril-tab">
+                                        <img src="caminho/para/sua/imagem8.jpg" class="img-fluid">
+                                        <h2>Tour Estoril</h2>
+                                        <p>Informações sobre o Tour Estoril...</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-fatima" role="tabpanel" aria-labelledby="tour-fatima-tab">
+                                        <img src="caminho/para/sua/imagem8.jpg" class="img-fluid">
+                                        <h2>Tour Fátima</h2>
+                                        <p>Informações sobre o Tour Fátima...</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-tomar" role="tabpanel" aria-labelledby="tour-tomar-tab">
+                                        <img src="caminho/para/sua/imagem8.jpg" class="img-fluid">
+                                        <h2>Tour Tomar</h2>
+                                        <p>Informações sobre o Tour Tomar...</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-arrabida" role="tabpanel" aria-labelledby="tour-arrabida-tab">
+                                        <img src="caminho/para/sua/imagem8.jpg" class="img-fluid">
+                                        <h2>Tour Arrábida</h2>
+                                        <p>Informações sobre o Tour Arrábida...</p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-evora" role="tabpanel" aria-labelledby="tour-evora-tab">
+                                        <img src="caminho/para/sua/imagem8.jpg" class="img-fluid">
+                                        <h2>Tour Évora</h2>
+                                        <p>Informações sobre o Tour Évora...</p>
                                     </div>
                                 </div>
                             </div>
@@ -177,11 +237,12 @@
         </section>
     </main>
 
-    <footer class="border-top py-3 my-4 fixed-bottom">
+    <footer class="border-top py-3">
         <div class="footer-container d-flex flex-wrap justify-content-between align-items-center ">
             <p class="col-md-4 mb-0 ">© 2024 Soc. de Táxis Fortes, Lda</p>
 
-            <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+            <div
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
                 <a href="index.html">
                     <img src="assets/images/Logo-semtxt-sem-fundo.png" alt="">
                 </a>

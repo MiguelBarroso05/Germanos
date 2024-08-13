@@ -26,39 +26,12 @@
 :root {
     --mainColor: #282423;
     --secondaryColor: #E6AB33;
-    --Color1: #BBDEF0;
-    --Color2: #ffffff;
-    --Color3: #2c3e50;
-}
-
-
-/* Body */
-body{
-    font-family: 'Caviar', sans-serif !important;
-    background-color: #282423 !important;
-}
-
-.buttons{
-    border: 0;
-    height: 4rem;
-    width: 340px;
-    border-radius: 12px;
-}
-
-.buttons:hover{
-    color: white;
-    background-color: var(--secondaryColor); 
-    transition: 0.4s;
-}
-
-.titulo h1{
-    font-size: 2rem;
-    color: #ffffff;
-    margin-top: 4rem;
-}
-
-footer{
-    margin-top: 4rem;
+    --Color1: #e7eff3;
+    --Color2: #ffefae;
+    --Color3: #201d1c;
+    --Color4: #474240;
+    --Color5: #f6faff;
+    --Color6: #b9b9b9;
 }
 
 
@@ -68,7 +41,7 @@ footer{
 }
 
 .navbar-bg{
-    background-color: #282423;
+    background-color: var(--Color3);
 }
 
 .nav-item a{
@@ -76,6 +49,129 @@ footer{
     color: white;
 }
 
+.navbar-bg {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.nav-link .dropdown-toggle .show{
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--Color2) !important;
+}
+
+.navbar-nav .dropdown-item {
+    color: white;
+    background-color: var(--Color3);
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: var(--Color2);
+    background-color: var(--Color4);
+}
+
+.dropdown-menu {
+    background-color: var(--mainColor) !important;
+}
+
+
+/* Body */
+body{
+    font-family: 'Caviar', sans-serif !important;
+    background-color: #282423 !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.buttons{
+    border: 0;
+    height: 4rem;
+    width: 340px;
+    border-radius: 12px;
+}
+
+.buttonsGolf{
+    width: 260px !important;
+    margin-left: 50% !important;
+}
+
+.buttons:hover{
+    color: white;
+    background-color: var(--secondaryColor); 
+    transition: 0.4s;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+.buttons a:hover{
+    color: white;
+    background-color: var(--secondaryColor); 
+    transition: 0.4s;
+}
+
+.titulo h1{
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+h1{
+    color: var(--Color5) !important;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0), /* Sombra principal */
+                 1px 1px 2px rgb(0, 0, 0) !important; /* Sombra sutil adicional */
+}
+
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    flex: 1;
+    margin: 2% 0 0 7.5% ;
+}
+
+
+/* Fotter */
+.border-top{
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+/*
+.footer-container{
+    margin: 0 7.5% 0 7.5%;
+}
+*/
+
+footer p{
+    color: var(--Color6);
+}
+
+footer img{
+    height: 55px;
+}
+
+footer a{
+    font-size: 1rem !important;
+    color: var(--Color6) !important;
+}
+
+footer a:hover{
+    color: var(--Color1) !important;
+}
+
+footer{
+    margin-top: 4rem;
+}
+
+
+/* index.html */
+/* Promo */
 .promo{
     z-index: 0;
     display: flex;
@@ -124,33 +220,8 @@ footer{
 }
 
 
-/* Main */
-main{
-    display: flex;
-    flex-direction: column;
-    margin: 2% 0 0 7.5% ;
-    width: 85%;
-}
-
-
-/* Fotter */
-.footer-container{
-    margin: 0 7.5% 0 7.5%;
-}
-footer p{
-    color: white;
-}
-footer img{
-    height: 70px;
-}
-footer a{
-    font-size: 1rem !important;
-}
-
-
-/* Home */
 /* Section Contactos */
-.contactos{
+.golf{
     display: inline-flex;
     align-items: center;
     height: 20rem;
@@ -163,17 +234,17 @@ footer a{
     margin: 2rem 0 0 0;
 }
 
-.contactos h5{
+.golf h5{
     margin-left: 10%;
     font-size:2.7rem;
 }
 
-.contactos p{
+.golf p{
     margin-left: 10%;
     font-size: 1.5rem;
 }
 
-.contactos button{
+.golf button{
     height: 5rem;
     font-size: 2rem;
     width: 20%;
@@ -219,6 +290,7 @@ footer a{
     width: 32.5rem;
 }
 
+
 /* Section Tours */
 .cardTour{
     width: 100%;
@@ -232,7 +304,17 @@ footer a{
 }
 
 
+/* Titulos & Card color*/
+.titulo h1{
+    font-family: 'CaviarBold', sans-serif !important;
+}
 
+.card{
+    background-color: var(--Color1) !important;
+}
+
+
+/* about.html */
 /* Sobre */
 .main-about{
     margin-top: 5%;
@@ -240,31 +322,81 @@ footer a{
     text-align: justify;
 }
 
+.main-about h1{
+    font-family: 'CaviarBold', sans-serif !important;
+    margin-top: 2rem;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 60px !important;
+    height: 60px !important;
+    filter: invert(1)
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+    transition: 0.3s;
+    filter: invert(0)
+}
+
 .c-img{
     height: 35rem;
     object-fit:cover;
+    border-radius: 12px;
+}
+
+.ofertas{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 
+/* services.html */
 /* Serviços */
+.sidebar{
+    width: 120px !important; 
+    margin: 18rem 0 0 0.5% !important;
+}
+
 .tabs{
+    width: 82% !important;
+}
+
+.mainServicos{
+    width: 100% !important; 
+    margin: 2rem 0 0 0;
+}
+
+.mainServicos h2, .mainServicos p {
+    color: white;
+    margin: 2rem 0 0 0;
+}
+
+.mainServicos img{
+    height: 38rem;
+    border-radius: 12px;
+    margin: 2rem 2rem 0 0;
+}
+
+.servicosConteudo{
     display: inline-flex !important;
 }
 
 
 
-
-
+/* prices.html */
 /* Preços */
 
 
 
 
-
+/* contacts.html */
 /* Contactos */
 .mapa iframe{
     border-radius:12px;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .mapaContactos{
@@ -280,6 +412,7 @@ footer a{
     font-size: 1.2rem;
     color: #ffffff;
     margin: 0;
+    text-align: justify;
 }
 
 .infoDiv{
@@ -296,5 +429,6 @@ footer a{
     border-radius: 6px;
     height: 2rem;
     margin-right: 15px;
+    fill: var(--mainColor);
     background: linear-gradient(45deg, #ffd700, #ffffff, #ffcc00, #a58400);
 }
