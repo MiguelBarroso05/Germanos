@@ -8,7 +8,7 @@ function trocarBackground() {
     heroDiv.classList.add('fade-out');
 
     setTimeout(() => {
-        heroDiv.style.backgroundImage = `url(./assets/images/${imagens[index]})`;
+        heroDiv.style.backgroundImage = `url(./assets/images/home/${imagens[index]})`;
         index = (index + 1) % imagens.length;
 
         heroDiv.classList.remove('fade-out');

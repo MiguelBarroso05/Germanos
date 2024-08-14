@@ -71,6 +71,10 @@
     background-color: var(--Color4);
 }
 
+.navbar-nav .fw-bold:hover {
+    color: white !important;
+}
+
 .dropdown-menu {
     background-color: var(--mainColor) !important;
 }
@@ -121,8 +125,6 @@ body{
 
 h1{
     color: var(--Color5) !important;
-    text-shadow: 3px 3px 5px rgb(0, 0, 0), /* Sombra principal */
-                 1px 1px 2px rgb(0, 0, 0) !important; /* Sombra sutil adicional */
 }
 
 
@@ -141,12 +143,6 @@ main{
     width: 85%;
     margin-left: 7.5%;
 }
-
-/*
-.footer-container{
-    margin: 0 7.5% 0 7.5%;
-}
-*/
 
 footer p{
     color: var(--Color6);
@@ -176,8 +172,6 @@ footer{
     z-index: 0;
     display: flex;
     flex-direction: column;
-    background-image: url("./assets/images/hero3.jpg");
-    filter: grayscale(); /*Provisorio*/
     background-size: cover;
     background-position: center;
     height: 63rem;
@@ -226,7 +220,7 @@ footer{
     align-items: center;
     height: 20rem;
     border-radius: 6px;
-    background-image: url("./assets/images/golf.jpg");
+    background-image: url("./assets/images/home/golf.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 60% right;
@@ -235,11 +229,14 @@ footer{
 }
 
 .golf h5{
+    text-shadow: white 2px 2px 2px;
     margin-left: 10%;
     font-size:2.7rem;
 }
 
 .golf p{
+    text-shadow: white 2px 2px 2px;
+
     margin-left: 10%;
     font-size: 1.5rem;
 }
@@ -384,6 +381,48 @@ footer{
     display: inline-flex !important;
 }
 
+.servicos button{
+    color: var(--Color2);
+}
+
+.servicos button:hover{
+    color: var(--secondaryColor);
+}
+
+.servicos .active{
+    color: var(--secondaryColor) !important;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--Color4) !important;
+}
+
+.nav-tabs .nav-link.active:focus {
+    background-color: var(--Color4) !important;
+}
+
+.servicos .active button:hover{
+    background-color: var(--Color4);
+    border: solid var(--Color2) 1px;
+}
+
+.sidebar .list-group-item {
+    background-color: var(--Color3);
+    color: var(--Color2);
+    border: none;
+}
+
+.sidebar .list-group-item.active {
+    background-color: var(--Color4);
+    border: none;
+}
+
+.sidebar .list-group-item:hover {
+    background-color: var(--Color4);
+    color: var(--secondaryColor) !important;
+}
+
+
 
 
 /* prices.html */
@@ -428,7 +467,24 @@ footer{
 .info svg{
     border-radius: 6px;
     height: 2rem;
+    padding: 0.3rem;
     margin-right: 15px;
     fill: var(--mainColor);
-    background: linear-gradient(45deg, #ffd700, #ffffff, #ffcc00, #a58400);
+    background: var(--Color2);
+}
+
+
+/* termos.html politicas.html */
+/* Politicas e Termos */
+.politicaTermos h1, .politicaTermos h2, .politicaTermos p{
+    color: white;
+    text-align: justify;
+}
+
+.politicaTermos h1{
+    margin: 5rem 0 3rem 0;
+}
+
+.politicaTermos a{
+    color: white !important;
 }

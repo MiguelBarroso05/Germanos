@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germano's</title>
+    <link rel="icon" type="image/png" href="../assets/images/logos/Logo-semtxt-sem-fundo.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-bg navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="../assets/images/logos/Logo-sem-fundo.png" alt=""
+                        style="height: 80px;"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Sobre-nos/">Sobre Nós</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="../Servicos/">Serviços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Precario/">Preçário</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Contactos/">Contactos</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Idioma
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Português</a></li>
+                                <li><a class="dropdown-item" href="#">Inglês</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mainServicos">
+        <section class="servicos" style="margin-top: 100px;">
+            <div class="container" style="margin: 0 !important; width: 100% !important; max-width: 1920px;">
+                <div class="row">
+
+                    <div class="col-md-3 sidebar">
+                        <div class="list-group" id="main-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-servicos-list"
+                                data-bs-toggle="tab" href="#servicos" role="tab">Serviços</a>
+                            <a class="list-group-item list-group-item-action" id="list-transfers-list"
+                                data-bs-toggle="tab" href="#transfers" role="tab">Transfers</a>
+                            <a class="list-group-item list-group-item-action" id="list-tours-list" data-bs-toggle="tab"
+                                href="#tours" role="tab">Tours</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 tabs">
+                        <div class="tab-content" id="main-tabContent">
+                            <!-- Conteúdo Serviços -->
+                            <div class="tab-pane fade show active" id="servicos" role="tabpanel"
+                                aria-labelledby="list-servicos-list">
+                                <ul class="nav nav-tabs" id="servicosTab" role="tablist">
+                                    <li class="nav-item">
+                                        <button class="nav-link active" id="servico-rodoviario-tab" data-bs-toggle="tab"
+                                            data-bs-target="#servico-rodoviario" type="button" role="tab"
+                                            aria-controls="servico-rodoviario" aria-selected="true">Serviço
+                                            Rodoviário</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="servico-maritimo-tab" data-bs-toggle="tab"
+                                            data-bs-target="#servico-maritimo" type="button" role="tab"
+                                            aria-controls="servico-maritimo" aria-selected="false">Serviço
+                                            Marítimo</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="servico-aereo-tab" data-bs-toggle="tab"
+                                            data-bs-target="#servico-aereo" type="button" role="tab"
+                                            aria-controls="servico-aereo" aria-selected="false">Serviço Aéreo</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="servico-concierge-tab" data-bs-toggle="tab"
+                                            data-bs-target="#servico-concierge" type="button" role="tab"
+                                            aria-controls="servico-concierge" aria-selected="false">Serviço
+                                            Concierge</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="golf-tab" data-bs-toggle="tab"
+                                            data-bs-target="#golf" type="button" role="tab" aria-controls="golf"
+                                            aria-selected="false">Serviço Golf</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-3">
+                                    <div class="tab-pane fade show active" id="servico-rodoviario" role="tabpanel"
+                                        aria-labelledby="servico-rodoviario-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Serviço Rodoviário</h2>
+                                                <p>A Germano's oferece uma ampla gama de serviços de transporte para
+                                                    empresários e organizações de renome em Portugal, como Lilly Farma,
+                                                    EDP,
+                                                    Sanofi Pasteur MSD, Bes-i, Universal Music, Mitsui & Company, e
+                                                    Kagome.
+                                                    Com
+                                                    permissão especial do Ministério do Turismo, nossa frota tem acesso
+                                                    a
+                                                    áreas
+                                                    restritas, incluindo corredores de autocarros, o que nos dá uma
+                                                    vantagem
+                                                    em
+                                                    áreas de alto tráfego. Atendemos clientes 24 horas por dia, com
+                                                    motoristas
+                                                    multilíngues, pontuais e formalmente vestidos, que podem conduzir
+                                                    tanto
+                                                    nossos veículos quanto o do próprio cliente, se necessário.
+
+                                                    <br><br> Nossa experiência em trabalhar com embaixadas e em eventos
+                                                    internacionais
+                                                    nos capacita a organizar grandes eventos com eficiência. Além de
+                                                    transfers,
+                                                    oferecemos veículos à disposição, inclusive durante a noite ou em
+                                                    horários
+                                                    fora do expediente, sempre a preços competitivos. A Limoutravel
+                                                    garante
+                                                    rapidez e flexibilidade na gestão de reservas, sem taxas para
+                                                    alterações
+                                                    ou
+                                                    cancelamentos de última hora. Nossa equipe está pronta para cuidar
+                                                    de
+                                                    todas
+                                                    as suas necessidades, desde traduções até check-ins, garantindo
+                                                    discrição e
+                                                    confidencialidade em todos os momentos.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="servico-maritimo" role="tabpanel"
+                                        aria-labelledby="servico-maritimo-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Serviço Marítimo</h2>
+                                                <p>Como a nossa mais recente adição, temos o prazer de oferecer o
+                                                    luxuoso
+                                                    Azimut 443 Atlantis, ideal para tornar seus momentos especiais ainda
+                                                    mais memoráveis. Seja para celebrar um aniversário ao largo de
+                                                    Cascais
+                                                    com amigos, desfrutando da brisa do mar e das vistas deslumbrantes
+                                                    da
+                                                    costa, ou para um pedido de casamento inesquecível com um jantar
+                                                    romântico à vista da península de Setúbal e Troia, este elegante
+                                                    iate
+                                                    proporciona a combinação perfeita de conforto e sofisticação.
+                                                    Navegue
+                                                    com estilo e crie recordações inesquecíveis a bordo do Azimut 443
+                                                    Atlantis, que oferece um ambiente requintado e vistas panorâmicas
+                                                    para
+                                                    momentos verdadeiramente especiais.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="servico-aereo" role="tabpanel"
+                                        aria-labelledby="servico-aereo-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Serviço Aéreo</h2>
+                                                <p>Oferecemos um serviço abrangente de planeamento aéreo, handling,
+                                                    charters e abastecimento nos principais aeroportos de Portugal,
+                                                    Angola, Moçambique e Cabo Verde. A mossa equipa especializada está
+                                                    pronta para garantir uma experiência de viagem sem interrupções,
+                                                    desde a coordenação detalhada dos seus voos até o suporte completo
+                                                    em solo, assegurando que cada etapa do seu percurso seja eficiente e
+                                                    tranquila. Seja para voos comerciais ou privados, estamos
+                                                    comprometidos em fornecer um serviço de excelência para atender
+                                                    todas as suas necessidades aéreas e logísticas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="servico-concierge" role="tabpanel"
+                                        aria-labelledby="servico-concierge-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Serviço Concierge</h2>
+                                                <p>Está à procura do tão desejado Rolex Daytona? Ou talvez queira que o
+                                                    prestigiado alfaiate CR7, Paulo Battista, vá até sua casa para
+                                                    ajustar o seu fato? Se está à espera de um amigo especial e gostaria
+                                                    de receber um atendimento personalizado, com recepção direta no
+                                                    avião e acompanhamento até ao ponto de encontro no aeroporto, temos
+                                                    as melhores soluções para si. Pergunte-nos e descubra como podemos
+                                                    oferecer propostas à medida para satisfazer todas as suas
+                                                    necessidades com o máximo conforto e exclusividade.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="golf" role="tabpanel" aria-labelledby="golf-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Serviço Golf</h2>
+                                                <p>Deseja uma experiência de golfe sem preocupações? Oferecemos um
+                                                    serviço completo para garantir que o seu dia no campo de golfe seja
+                                                    perfeito. Começamos com o transporte confortável até ao campo,
+                                                    garantindo que você chegue relaxado e pronto para jogar. Cuidamos de
+                                                    todas as reservas, garantindo acesso aos melhores campos e horários
+                                                    que se ajustam à sua agenda.
+
+                                                    Além disso, disponibilizamos uma van dedicada para transportar o seu
+                                                    equipamento de golfe, assegurando que tudo chegue em perfeitas
+                                                    condições. Para completar, oferecemos serviços personalizados que
+                                                    atendem a todas as suas necessidades, desde assistência no campo até
+                                                    sugestões de golfistas locais. Confie em nós para proporcionar uma
+                                                    experiência de golfe inesquecível, cuidando de cada detalhe para que
+                                                    você possa focar apenas no jogo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conteúdo Transfers -->
+                            <div class="tab-pane fade" id="transfers" role="tabpanel"
+                                aria-labelledby="list-transfers-list">
+                                <ul class="nav nav-tabs" id="transfersTab" role="tablist">
+                                    <li class="nav-item">
+                                        <button class="nav-link active" id="transfer-vip-tab" data-bs-toggle="tab"
+                                            data-bs-target="#transfer-vip" type="button" role="tab"
+                                            aria-controls="transfer-vip" aria-selected="true">Transfers</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-3">
+                                    <div class="tab-pane fade show active" id="transfer-vip" role="tabpanel"
+                                        aria-labelledby="transfer-vip-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Transfers</h2>
+                                                <p>Oferecemos um serviço de transfers exclusivo e confortável, adaptado
+                                                    para todas as suas necessidades de deslocamento. Em Lisboa,
+                                                    disponibilizamos o elegante Mercedes Classe E para até 4 passageiros
+                                                    e o espaçoso Minivan Mercedes para 7/8 passageiros. Seja para uma
+                                                    viagem rápida a Carnaxide ou para destinos mais distantes como
+                                                    Madrid, garantimos um transporte de alta qualidade e conforto. Além
+                                                    disso, oferecemos assistência no check-in do aeroporto para
+                                                    partidas, com marcação prévia e um custo adicional.
+
+                                                    <br><br>No Porto, o nosso serviço de transfers inclui tanto o Mercedes
+                                                    Classe E quanto a Minivan Mercedes, prontos para levá-lo a destinos
+                                                    como Braga, Guimarães e até Madrid. Também está disponível a
+                                                    assistência no check-in do aeroporto, proporcionando um atendimento
+                                                    completo desde a sua partida.
+
+                                                    <br><br>No Algarve, oferecemos transfers a partir de Faro para locais como
+                                                    Vilamoura e Lagos, bem como para destinos internacionais como
+                                                    Sevilha, Gibraltar e Madrid. Com a mesma qualidade de serviço, você
+                                                    pode contar com conforto e eficiência em cada viagem. A assistência
+                                                    no check-in do aeroporto também está disponível com marcação prévia,
+                                                    garantindo uma experiência tranquila e sem preocupações.
+
+                                                    <br><br> Entre em contacto connosco para descobrir como podemos oferecer um
+                                                    transporte personalizado e de excelência para todos os seus
+                                                    deslocamentos.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conteúdo Tours -->
+                            <div class="tab-pane fade" id="tours" role="tabpanel" aria-labelledby="list-tours-list">
+                                <ul class="nav nav-tabs" id="toursTab" role="tablist">
+                                    <li class="nav-item">
+                                        <button class="nav-link active" id="tour-lisboa-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-lisboa" type="button" role="tab"
+                                            aria-controls="tour-lisboa" aria-selected="true">Tour Lisboa</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-sintra-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-sintra" type="button" role="tab"
+                                            aria-controls="tour-sintra" aria-selected="false">Tour Sintra</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-estoril-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-estoril" type="button" role="tab"
+                                            aria-controls="tour-estoril" aria-selected="false">Tour Estoril</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-fatima-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-fatima" type="button" role="tab"
+                                            aria-controls="tour-fatima" aria-selected="false">Tour Fátima</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-tomar-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-tomar" type="button" role="tab"
+                                            aria-controls="tour-tomar" aria-selected="false">Tour Tomar</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-arrabida-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-arrabida" type="button" role="tab"
+                                            aria-controls="tour-arrabida" aria-selected="false">Tour Arrábida</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-evora-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-evora" type="button" role="tab"
+                                            aria-controls="tour-evora" aria-selected="false">Tour Évora</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-3">
+                                    <div class="tab-pane fade show active" id="tour-lisboa" role="tabpanel"
+                                        aria-labelledby="tour-lisboa-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Tour Lisboa</h2>
+                                                <p>Explore a essência de Lisboa começando pelo Castelo de São Jorge, a
+                                                    Sé
+                                                    Catedral e a Igreja de Santo António. Passeie pelas ruas sinuosas de
+                                                    Alfama até à Casa dos Bicos, sede da Fundação Saramago. De lá, passe
+                                                    pela icônica Praça do Comércio, atravessando o Chiado e o Bairro
+                                                    Alto,
+                                                    antes de visitar o Parlamento e a Casa de Fernando Pessoa. Em Belém,
+                                                    delicie-se com os famosos pastéis de Belém, visite o Museu dos
+                                                    Coches, o
+                                                    Mosteiro dos Jerónimos, a Torre de Belém e o Padrão dos
+                                                    Descobrimentos.
+                                                    Se preferir, podemos levá-lo ao Oceanário, ao Parque das Nações, ou
+                                                    aos
+                                                    museus de sua escolha, como o Museu Gulbenkian, o de Arte Antiga, ou
+                                                    o
+                                                    Museu do Azulejo.
+
+                                                    <br><br>Oferecemos diversos programas em Lisboa, desde tours de 4
+                                                    horas
+                                                    até
+                                                    passeios de dia inteiro, incluindo paragens nos principais pontos
+                                                    turísticos como o Parque Eduardo VII, Marquês de Pombal, Rossio, Sé
+                                                    Catedral e Castelo de São Jorge. Para uma experiência mais completa,
+                                                    há
+                                                    opções adicionais, como um passeio no icônico elétrico 28, visitas a
+                                                    museus e ateliers, ou uma noite inesquecível de fado com jantar. Se
+                                                    preferir, opte por um tour noturno de 4 horas pela cidade, incluindo
+                                                    transporte e acompanhamento até um restaurante de fado.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-sintra" role="tabpanel"
+                                        aria-labelledby="tour-sintra-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Tour Sintra</h2>
+                                                <p>Não deixe de explorar o Palácio Nacional de Queluz e a encantadora
+                                                    vila
+                                                    de Sintra, onde encontrará o famoso Palácio da Pena, o Castelo dos
+                                                    Mouros,
+                                                    a Quinta da Regaleira e o Palácio Real. Uma visita ao Cabo da Roca,
+                                                    o
+                                                    ponto mais ocidental da Europa continental, também é imperdível. Ao
+                                                    seguir
+                                                    pela costa atlântica, passando pelo Guincho e Cascais até Lisboa,
+                                                    pode-se
+                                                    aproveitar para apreciar a gastronomia local com vistas para o mar,
+                                                    praticar golfe em belos campos ou simplesmente desfrutar das praias
+                                                    e
+                                                    ondas do
+                                                    Atlântico, seja para banhos de sol ou surfe.
+
+                                                    <br><br>Os passeios pela região incluem opções de diferentes
+                                                    durações e
+                                                    roteiros. O "Meio-dia de Sintra" (5 horas) começa com uma visita a
+                                                    Queluz e segue Sintra, Cascais e Estoril, retornando a Lisboa pela
+                                                    Estrada Marginal. Já o "Circuito de Sintra" (9 horas) é mais
+                                                    completo,
+                                                    incluindo visitas ao Palácio da Pena e paragens em diversos locais
+                                                    emblemáticos como Cabo da Roca e Guincho. A "Noturna Estoril" (5
+                                                    horas)
+                                                    é uma opção noturna com saída para o Estoril e regresso pela
+                                                    autoestrada. Para um passeio mais longo, o "Circuito de Mafra" (10
+                                                    horas) inclui uma visita ao Palácio de Queluz, ao Convento de Mafra,
+                                                    com
+                                                    tempo livre em Ericeira, e segue por Sintra e Guincho antes de
+                                                    terminar
+                                                    em Lisboa.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-estoril" role="tabpanel"
+                                        aria-labelledby="tour-estoril-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Tour Estoril</h2>
+                                                <p>Explore o charme da Costa do Estoril com um tour de 5 horas que
+                                                    combina
+                                                    história, elegância e vistas deslumbrantes do litoral português. O
+                                                    passeio começa com um encontro na receção do hotel, seguido pela
+                                                    saída
+                                                    pela famosa Estrada Marginal, uma das rotas mais pitorescas de
+                                                    Portugal,
+                                                    que acompanha a costa atlântica ao longo do rio Tejo. À medida que
+                                                    avançamos, você poderá desfrutar das vistas panorâmicas do oceano e
+                                                    das
+                                                    praias douradas.
+
+                                                    <br><br>A primeira parada é na sofisticada vila do Estoril,
+                                                    conhecida
+                                                    pelo seu
+                                                    glamoroso passado e pelo icônico Casino do Estoril, o maior da
+                                                    Europa e
+                                                    inspiração para o famoso romance de James Bond, "Casino Royale".
+                                                    Aqui,
+                                                    você terá tempo para explorar os jardins do casino, passear pela
+                                                    praia
+                                                    do Tamariz ou relaxar em um dos elegantes cafés à beira-mar. O tour
+                                                    pode
+                                                    incluir uma visita ao Palácio Estoril, um símbolo de luxo e
+                                                    história,
+                                                    famoso por ter hospedado membros da realeza europeia durante a
+                                                    Segunda
+                                                    Guerra Mundial. A excursão continua com uma breve visita à pitoresca
+                                                    vila de Cascais, antes de retornar a Lisboa pela mesma estrada
+                                                    costeira,
+                                                    aproveitando o cenário deslumbrante do final da tarde. Retorno ao
+                                                    hotel
+                                                    ao término do passeio.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-fatima" role="tabpanel"
+                                        aria-labelledby="tour-fatima-tab">
+                                        <div class="servicosConteudo">
+
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Tour Fátima</h2>
+                                                <p>O passeio de 10 horas a Fátima oferece uma experiência completa,
+                                                    começando com uma visita ao Santuário de Fátima, onde se pode
+                                                    assistir à
+                                                    missa e explorar a Basílica, a Capelinha das Aparições e a nova
+                                                    Igreja
+                                                    da Santíssima Trindade. Após o almoço sugerido no restaurante "Tia
+                                                    Alice", a excursão segue para o Mosteiro da Batalha, Alcobaça,
+                                                    Nazaré,
+                                                    Alfazeirão e Óbidos, onde é possível degustar a tradicional
+                                                    ginjinha. O
+                                                    retorno ao hotel encerra o dia, com a opção de incluir uma visita ao
+                                                    Convento de Cristo e à Sinagoga em Tomar.
+
+                                                    <br><br>O roteiro de 10 horas para Tomar também inclui uma visita a
+                                                    Fátima, mas
+                                                    com um foco inicial na cidade de Santarém e suas atrações
+                                                    históricas,
+                                                    como a Igreja de S. Estêvão e a Igreja da Graça. Após o almoço em
+                                                    Almeirim, o passeio segue para o Castelo de Almourol e a cidade de
+                                                    Constância, antes de chegar a Tomar para visitar o Convento de
+                                                    Cristo e,
+                                                    opcionalmente, a Sinagoga. O dia termina com uma visita ao Santuário
+                                                    de
+                                                    Fátima e às casas dos Pastorinhos, retornando ao hotel. Para uma
+                                                    versão
+                                                    mais curta, há a opção de 5 horas, que foca exclusivamente na visita
+                                                    ao
+                                                    Santuário de Fátima com retorno direto a Lisboa. Uma alternativa
+                                                    mais
+                                                    extensa inclui Coimbra, com visitas à Universidade e outros pontos
+                                                    históricos, além de Fátima, totalizando 10 horas de passeio.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-tomar" role="tabpanel"
+                                        aria-labelledby="tour-tomar-tab">
+                                        <div class="servicosConteudo">
+
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Tour Tomar</h2>
+                                                <p>Explore a rica história e cultura de Tomar com um tour de 10
+                                                    horas
+                                                    que
+                                                    oferece uma imersão completa nas tradições e marcos históricos
+                                                    da
+                                                    região. A jornada começa com um encontro na receção do hotel,
+                                                    seguido
+                                                    por uma partida pela A1 em direção a Santarém. Lá, você será
+                                                    guiado
+                                                    pelo
+                                                    Centro Histórico, visitando a Igreja de S. Estêvão, famosa pelo
+                                                    milagre
+                                                    da Hóstia Sagrada, e a Igreja da Graça, onde repousam os restos
+                                                    mortais
+                                                    do navegador Pedro Álvares Cabral. A visita inclui uma parada
+                                                    nas
+                                                    Portas
+                                                    do Sol, que oferece uma vista panorâmica sobre o rio Tejo.
+
+                                                    <br><br>Após o almoço em Almeirim, onde você pode saborear a
+                                                    tradicional
+                                                    "sopa
+                                                    da pedra", o passeio continua para o Castelo de Almourol,
+                                                    situado
+                                                    numa
+                                                    pequena ilha no rio Tejo, e para Constância, a terra natal de
+                                                    Luís
+                                                    de
+                                                    Camões. Em Tomar, o destaque é a visita ao imponente Convento de
+                                                    Cristo,
+                                                    uma joia da arquitetura templária e manuelina, seguida por uma
+                                                    visita
+                                                    opcional à histórica Sinagoga de Tomar, uma das mais antigas de
+                                                    Portugal. O tour pode ser personalizado com uma visita adicional
+                                                    ao
+                                                    Santuário de Fátima, onde se encontram a Basílica e a Capelinha
+                                                    das
+                                                    Aparições. Retorno ao hotel ao final do dia.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-arrabida" role="tabpanel"
+                                        aria-labelledby="tour-arrabida-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Tour Arrábida</h2>
+                                                <p>Descubra as paisagens deslumbrantes e a rica cultura da região da
+                                                    Arrábida com um tour de 8 horas que o levará por alguns dos
+                                                    locais mais
+                                                    pitorescos de Portugal. O passeio começa com um encontro na
+                                                    receção do
+                                                    hotel, seguido pela travessia da Ponte 25 de Abril, oferecendo
+                                                    vistas
+                                                    impressionantes sobre o rio Tejo e Lisboa. A primeira parada é
+                                                    na vila
+                                                    de Azeitão, conhecida pelas suas vinhas e produção de vinhos.
+                                                    Aqui, você
+                                                    terá a oportunidade de visitar uma adega tradicional, degustar
+                                                    vinhos
+                                                    regionais e provar a famosa torta de Azeitão.
+
+                                                    <br><br>A seguir, o tour continua pelo Parque Natural da
+                                                    Arrábida, um
+                                                    dos
+                                                    tesouros naturais de Portugal, onde poderá apreciar a paisagem
+                                                    única que
+                                                    combina montanhas, floresta e o mar azul-turquesa do Atlântico.
+                                                    Faremos
+                                                    uma parada para admirar as vistas panorâmicas desde os pontos
+                                                    mais altos
+                                                    da serra e visitar praias isoladas, como a Praia de Galápos ou a
+                                                    Praia
+                                                    do Portinho da Arrábida, conhecidas pelas suas águas
+                                                    cristalinas. O tour
+                                                    segue para a histórica vila de Sesimbra, onde poderá explorar o
+                                                    seu
+                                                    castelo medieval e o pitoresco porto de pesca. Antes de
+                                                    regressar a
+                                                    Lisboa, há ainda uma paragem no Cabo Espichel, onde as falésias
+                                                    dramáticas encontram o oceano, proporcionando uma vista
+                                                    inesquecível.
+                                                    Retorno ao hotel ao final do dia.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-evora" role="tabpanel"
+                                        aria-labelledby="tour-evora-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Tour Évora</h2>
+                                                <p>Descubra a charmosa cidade de Évora e a rica herança cultural do
+                                                    Alentejo
+                                                    com um tour de 8 horas que oferece uma imersão nos tesouros
+                                                    históricos
+                                                    desta região. O passeio começa com um encontro na receção do hotel,
+                                                    seguido de uma viagem tranquila pela paisagem serena do Alentejo,
+                                                    conhecida pelas suas vastas planícies e vinhedos. Chegando a Évora,
+                                                    classificada como Património Mundial pela UNESCO, a primeira parada
+                                                    é na
+                                                    impressionante Praça do Giraldo, o coração da cidade, onde você
+                                                    poderá
+                                                    admirar a arquitetura medieval e o ambiente vibrante.
+
+                                                    <br><br>O tour inclui uma visita ao Templo Romano de Évora, também
+                                                    conhecido
+                                                    como Templo de Diana, um dos monumentos romanos mais bem preservados
+                                                    da
+                                                    Península Ibérica. Em seguida, explore a misteriosa Capela dos
+                                                    Ossos,
+                                                    situada na Igreja de São Francisco, uma das atrações mais
+                                                    intrigantes de
+                                                    Évora, onde paredes e colunas são decoradas com ossos humanos. A
+                                                    viagem
+                                                    continua com uma visita à Catedral de Évora, uma das maiores
+                                                    catedrais
+                                                    medievais de Portugal, oferecendo vistas panorâmicas da cidade.
+                                                    Antes de
+                                                    retornar a Lisboa, haverá tempo para um almoço tradicional num
+                                                    restaurante local, onde poderá saborear a autêntica gastronomia
+                                                    alentejana, conhecida pelos seus sabores ricos e únicos.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-top py-3">
+        <div class="footer-container d-flex flex-wrap justify-content-between align-items-center ">
+            <p class="col-md-5 mb-0 ">© 2024 Soc. de Táxis Fortes, Lda Todos os direitos reservados</p>
+
+            <div
+                class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <a href="index.html">
+                    <img src="../assets/images/logos/Logo-semtxt-sem-fundo.png" alt="">
+                </a>
+            </div>
+
+            <ul class=" nav col-md-5 justify-content-end">
+                <li class="nav-item"><a href="../Termos-condicoes/" class="nav-link px-2 ">Termos e Condições</a></li>
+                <li class="nav-item"><a href="../Politica-privacidade/" class="nav-link px-2 ">Politica de
+                        Privacidade</a></li>
+                <li class="nav-item"><a href="https://www.livroreclamacoes.pt" class="nav-link px-2 "
+                        target="_blank">Livro de Reclamações</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
