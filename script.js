@@ -41,3 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+
+
+window.onload = () => {
+
+    document.querySelector('.promoInfo').classList.add('show');   };
