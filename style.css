@@ -32,6 +32,8 @@
     --Color4: #474240;
     --Color5: #f6faff;
     --Color6: #b9b9b9;
+    --Color7: #343a40;
+    --Color8: #3d444b;
 }
 
 
@@ -195,8 +197,7 @@ footer{
 
 .promoInfo h1{ 
     color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--mainColor);
+    text-shadow: 1px 1px 1px var(--mainColor);
     font-size: 5rem;
     margin: 30rem 0 0 7.5%;
     font-family: 'lobster' !important;
@@ -274,6 +275,11 @@ footer{
     transition: transform 0.4s ease-in-out;   
 }
 
+.recImages{
+    height: 16rem;
+    transition: transform 0.4s ease-in-out;   
+}
+
 
 /* Section Transfers */
 .cardTransfers{
@@ -323,6 +329,16 @@ footer{
     font-family: 'CaviarBold', sans-serif !important;
     margin-top: 2rem;
 }
+.carousel-caption p{
+    margin-bottom: 0!important;
+}
+
+.carousel-caption{ 
+    margin-left: 15%;
+    width: 40%;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
@@ -358,7 +374,7 @@ footer{
 }
 
 .tabs{
-    width: 82% !important;
+    width: 85% !important;
 }
 
 .mainServicos{
@@ -423,12 +439,83 @@ footer{
 }
 
 
-
-
 /* prices.html */
 /* Preços */
+.precario{
+    margin-top: 6rem;
+}
 
+.precario button{
+    color: var(--Color2);
+}
 
+.precario button:hover{
+    color: var(--secondaryColor);
+}
+
+.precario .active{
+    color: var(--secondaryColor) !important;
+}
+
+main .condicoesGerais{
+    color: white;
+    text-align: justify;
+}
+
+.condicoesGerais h2{
+    font-family: 'CaviarBold', sans-serif !important;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.condicoesGerais{
+    display: inline-flex;   
+    justify-content: space-between;
+    width: 100%;
+}
+
+.precarioInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.alignRight{
+    padding-left: 20% !important;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.table{
+    overflow: hidden;
+    border-collapse: separate;
+    border-radius: 24px;
+    border-spacing: 0;
+}
+
+.table thead th{
+    padding: 1.2rem;
+    text-align: center;
+    color: white;
+    background-color: var(--Color7) !important;
+    border-bottom: solid 1px var(--mainColor);
+}
+
+.table tbody td{
+    text-align: center;
+    color: white;
+    background-color: var(--Color4);
+    border-bottom: solid 1px var(--mainColor);
+}
+
+.table tbody th{
+    text-align: center;
+    background-color: var(--Color8);
+    border-bottom: solid 1px var(--mainColor);
+    color: white;
+}
 
 
 /* contacts.html */
