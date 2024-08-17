@@ -575,10 +575,14 @@ main .condicoesGerais {
 .info svg {
     border-radius: 6px;
     height: 2rem;
-    padding: 0.3rem;
-    margin-right: 15px;
-    fill: var(--mainColor);
-    background: var(--Color2);
+    margin: -4px 15px 0 0;
+    fill: var(--Color2);
+    background: var(--mainColor);
+}
+
+.info .whatsapp{
+    height: 2.5rem;
+    margin-top: -8px;
 }
 
 
