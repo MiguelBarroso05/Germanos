@@ -12,7 +12,7 @@ function trocarBackground() {
 
         heroDiv.classList.remove('fade-out');
         heroDiv.classList.add('fade-in');
-    }, 700); // Tempo da transição (deve ser igual ao tempo definido em CSS!!)
+    }, 400); // Tempo da transição (deve ser igual ao tempo definido em CSS!!)
 }
 
 // Verifica se está na página principal
@@ -90,6 +90,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-window.onload = () => {
-
-    document.querySelector('.promoInfo').classList.add('show');   };
+window.onload = function() {
+    setTimeout(function() {
+        document.querySelector('.promoInfo').classList.add('show');
+    }, 600); // 1000ms = 1s
+  };
