@@ -210,9 +210,11 @@ footer {
     transition: opacity 0.4s;
 
 }
+
 .promoInfo.show{
     opacity: 1;
 } 
+
 .promoInfo h1 {
     color: white;
     text-shadow: 1px 1px 1px var(--mainColor);
@@ -233,7 +235,7 @@ footer {
 }
 
 
-/* Section Contactos */
+/* Section Golf */
 .golf {
     display: inline-flex;
     align-items: center;
@@ -303,13 +305,13 @@ footer {
 /* Section Transfers */
 .cardTransfers {
     width: 100%;
-    height: 24rem;
     display: inline-flex;
     justify-content: space-between;
 }
 
 .cardTransfers .card {
     width: 32.5rem;
+    height: 24rem;
 }
 
 
@@ -323,6 +325,7 @@ footer {
 .cardTour .card {
     width: 24rem;
     height: 27rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -601,4 +604,433 @@ main .condicoesGerais {
 
 .politicaTermos a {
     color: white !important;
+}
+
+
+/* Media Querys */
+/* Media Query Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+/* All */
+    /* Navbar */
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23ffefae' stroke-width='2' viewBox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='3' y1='12' x2='21' y2='12'/%3e%3cline x1='3' y1='6' x2='21' y2='6'/%3e%3cline x1='3' y1='18' x2='21' y2='18'/%3e%3c/svg%3e") !important;
+    }
+
+    .navbar-toggler:focus, 
+    .navbar-toggler:active {
+        border: 2px solid #ffefae;
+    }
+
+    .navbar-toggler {
+        box-shadow: none !important;
+    }
+       
+    .nav-item a {
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-container {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important;
+        text-align: center;
+    }
+    
+    .footer-container img {
+        margin-top: -5rem;
+    }
+
+    .footer-container ul li a {
+        font-size: 0.85rem !important;
+    }
+
+    .footer-container p {
+        font-size: 0.85rem !important;
+        margin: 4rem 0 -2rem 0 !important;
+    }
+
+    .col-md-5, .col-md-2 {
+        width: 100% !important;
+    }
+
+    .col-md-5 {
+        justify-content: center;
+    }
+
+    /* Home */
+    /* Promo */
+    .promo {
+        height: 40rem;
+    }
+
+    .promoInfo h1 {
+        font-size: 3rem;
+        margin: 15rem 0 0 7.5%;
+    }
+    
+    .promoInfo button {
+        font-size: 1.7rem;
+        margin: 7rem 0 0 7.5%;
+    }
+
+
+    /* Golf */
+    .golf {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .golf h5 {
+        font-size: 2rem;
+        margin: 5%;
+    }
+
+    .golf p {
+        display: none;
+    }
+
+    .golf button {
+        height: 5rem;
+        font-size: 2rem;
+        width: 200px !important;
+        margin-left: 25% !important;
+        height: 3.5rem !important;
+    }
+
+    .cardServicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: none !important;
+    }
+
+    .cardServicos .card {
+        width: 28rem;
+        margin-bottom: 2rem;
+    }
+
+    .cardServicos .card img{
+        width: 28rem;
+    }
+
+    .cardTransfers{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: none !important;
+    }
+
+    .cardTransfers .card {
+        width: 28rem;
+        margin-bottom: 2rem;
+    }
+
+    .cardTour {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: none !important;
+    }
+
+    .cardTour .card {
+        width: 28rem;
+        margin-bottom: 2rem;
+    }
+
+    .cardTour .card img{
+        width: 28rem;
+    }
+
+
+    /* About */
+    .main-about {
+        margin-top: 5rem;
+    }
+
+    .c-img {
+        height: 20rem;
+    }
+
+    .carousel-item h5{
+        font-size: 1rem;
+    }
+
+    .carousel-item p{
+        display: none;
+    }
+
+    .carousel-caption {
+        padding: 0.5rem 0 !important;
+    }
+
+    .ofertas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ofertas ul{
+        margin: 0;
+    }
+
+
+    /* Services */
+    .mainServicos .row{
+        justify-content: center;
+    }
+
+    .sidebar .list-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: auto !important;
+        margin: 0 0 2rem 0 !important;
+    }
+
+    .servicosConteudo img {
+        display: none;
+    }
+
+
+    /* Prices */
+    .condicoesGerais {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .precarioInfo {
+        width: 100%;
+    }
+
+    .precarioInfoCenter {
+        margin-left: 5%;
+    }
+    
+    .alignRight {
+        padding-left: 0% !important;
+    }
+
+
+    /* Contacts */
+    .infoDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        margin: 1rem;
+    }
+}
+
+
+/* Media Query Mobile */
+@media only screen and (max-width: 768px) {
+    /* All */
+    /* Navbar */
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23ffefae' stroke-width='2' viewBox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='3' y1='12' x2='21' y2='12'/%3e%3cline x1='3' y1='6' x2='21' y2='6'/%3e%3cline x1='3' y1='18' x2='21' y2='18'/%3e%3c/svg%3e") !important;
+    }
+
+    .navbar-toggler:focus, 
+    .navbar-toggler:active {
+        border: 2px solid #ffefae;
+    }
+
+    .navbar-toggler {
+        box-shadow: none !important;
+    }
+       
+    .nav-item a {
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-container {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important;
+        text-align: center;
+    }
+    
+    .footer-container img {
+        margin-top: -5rem;
+    }
+
+    .footer-container ul li a {
+        font-size: 0.85rem !important;
+    }
+
+    .footer-container p {
+        font-size: 0.85rem !important;
+        margin: 4rem 0 -2rem 0 !important;
+    }
+
+    /* Home */
+    /* Promo */
+    .promo {
+        height: 40rem;
+    }
+
+    .promoInfo h1 {
+        font-size: 3rem;
+        margin: 15rem 0 0 7.5%;
+    }
+    
+    .promoInfo button {
+        font-size: 1.7rem;
+        margin: 7rem 0 0 7.5%;
+    }
+
+
+    /* Golf */
+    .golf {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .golf h5 {
+        font-size: 2rem;
+        margin: 5%;
+    }
+
+    .golf p {
+        display: none;
+    }
+
+    .golf button {
+        height: 5rem;
+        font-size: 2rem;
+        width: 200px !important;
+        margin-left: 25% !important;
+        height: 3.5rem !important;
+    }
+
+    .cardServicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: none !important;
+    }
+
+    .cardServicos .card {
+        width: 28rem;
+        margin-bottom: 2rem;
+    }
+
+    .cardServicos .card img{
+        width: 28rem;
+    }
+
+    .cardTransfers{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: none !important;
+    }
+
+    .cardTransfers .card {
+        width: 28rem;
+        margin-bottom: 2rem;
+    }
+
+    .cardTour {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: none !important;
+    }
+
+    .cardTour .card {
+        width: 28rem;
+        margin-bottom: 2rem;
+    }
+
+    .cardTour .card img{
+        width: 28rem;
+    }
+
+
+    /* About */
+    .main-about {
+        margin-top: 5rem;
+    }
+
+    .c-img {
+        height: 20rem;
+    }
+
+    .carousel-item h5{
+        font-size: 1rem;
+    }
+
+    .carousel-item p{
+        display: none;
+    }
+
+    .carousel-caption {
+        padding: 0.5rem 0 !important;
+    }
+
+    .ofertas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ofertas ul{
+        margin: 0;
+    }
+
+
+    /* Services */
+    .mainServicos .row{
+        justify-content: center;
+    }
+
+    .sidebar .list-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: auto !important;
+        margin: 0 0 2rem 0 !important;
+    }
+
+    .servicosConteudo img {
+        display: none;
+    }
+
+
+    /* Prices */
+    .condicoesGerais {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .precarioInfo {
+        width: 100%;
+    }
+
+    .precarioInfoCenter {
+        margin-left: 5%;
+    }
+    
+    .alignRight {
+        padding-left: 0% !important;
+    }
+
+
+    /* Contacts */
+    .infoDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        margin: 1rem;
+    }
 }

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germano's</title>
+    <link rel="icon" type="image/png" href="../assets/images/logos/Logo-semtxt-sem-fundo.png">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-bg navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../"><img src="../../assets/images/logos/Logo-sem-fundo.png" alt=""
+                        style="height: 80px;"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../About-us/">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="../Services/">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pricing/">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Contacts/">Contacts</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../Servicos/">Portuguese</a></li>
+                                <li><a class="dropdown-item" href="">English</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mainServicos">
+        <section class="servicos" style="margin-top: 100px;">
+            <div class="container" style="margin: 0 !important; width: 100% !important; max-width: 100%;">
+                <div class="row">
+
+                    <div class="col-md-3 sidebar">
+                        <div class="list-group" id="main-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-servicos-list"
+                                data-bs-toggle="tab" href="#servicos" role="tab">Services</a>
+                            <a class="list-group-item list-group-item-action" id="list-transfers-list"
+                                data-bs-toggle="tab" href="#transfers" role="tab">Transfers</a>
+                            <a class="list-group-item list-group-item-action" id="list-tours-list" data-bs-toggle="tab"
+                                href="#tours" role="tab">Tours</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 tabs">
+                        <div class="tab-content" id="main-tabContent">
+                            <!-- Services Content -->
+                            <div class="tab-pane fade show active" id="servicos" role="tabpanel"
+                                aria-labelledby="list-servicos-list">
+                                <ul class="nav nav-tabs" id="servicosTab" role="tablist">
+                                    <li class="nav-item">
+                                        <button class="nav-link active" id="servico-rodoviario-tab" data-bs-toggle="tab"
+                                            data-bs-target="#servico-rodoviario" type="button" role="tab"
+                                            aria-controls="servico-rodoviario" aria-selected="true">Road
+                                            Service</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="servico-maritimo-tab" data-bs-toggle="tab"
+                                            data-bs-target="#servico-maritimo" type="button" role="tab"
+                                            aria-controls="servico-maritimo" aria-selected="false">Maritime
+                                            Service</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="servico-aereo-tab" data-bs-toggle="tab"
+                                            data-bs-target="#servico-aereo" type="button" role="tab"
+                                            aria-controls="servico-aereo" aria-selected="false">Air Service</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="servico-concierge-tab" data-bs-toggle="tab"
+                                            data-bs-target="#servico-concierge" type="button" role="tab"
+                                            aria-controls="servico-concierge" aria-selected="false">Concierge
+                                            Service</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="servico-golf-tab" data-bs-toggle="tab"
+                                            data-bs-target="#servico-golf" type="button" role="tab"
+                                            aria-controls="servico-golf" aria-selected="false">Golf Service</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-3">
+                                    <div class="tab-pane fade show active" id="servico-rodoviario" role="tabpanel"
+                                        aria-labelledby="servico-rodoviario-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/servico-rodoviario.jpg"
+                                                class="img-fluid">
+                                            <div>
+                                                <h2>Road Service</h2>
+                                                <p>Germano's offers a wide range of transportation services for
+                                                    executives and renowned organizations in Portugal, such as Lilly
+                                                    Farma,
+                                                    EDP,
+                                                    Sanofi Pasteur MSD, Bes-i, Universal Music, Mitsui & Company, and
+                                                    Kagome.
+                                                    With special permission from the Ministry of Tourism, our fleet has
+                                                    access
+                                                    to
+                                                    restricted areas, including bus lanes, giving us an advantage
+                                                    in
+                                                    high-traffic areas. We serve clients 24/7, with multilingual
+                                                    drivers, punctual
+                                                    and formally dressed, who can drive both our vehicles and the
+                                                    client's own vehicle, if needed.
+
+                                                    <br><br> Our experience working with embassies and international
+                                                    events
+                                                    enables us to efficiently organize large events. In addition to
+                                                    transfers,
+                                                    we offer vehicles at your disposal, including overnight or
+                                                    out-of-hours service, always at competitive prices. Limoutravel
+                                                    ensures
+                                                    quick and flexible reservation management, with no fees for
+                                                    last-minute changes
+                                                    or
+                                                    cancellations. Our team is ready to take care of all your needs,
+                                                    from translations to check-ins, ensuring discretion and
+                                                    confidentiality at all times.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="servico-maritimo" role="tabpanel"
+                                        aria-labelledby="servico-maritimo-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/servico-maritimo.jpg"
+                                                class="img-fluid">
+                                            <div>
+                                                <h2>Maritime Service</h2>
+                                                <p>As our latest addition, we are pleased to offer the luxurious
+                                                    Azimut 443 Atlantis, ideal for making your special moments even more
+                                                    memorable. Whether it's celebrating a birthday off the coast of
+                                                    Cascais
+                                                    with friends, enjoying the sea breeze and stunning coastal views, or
+                                                    an unforgettable marriage proposal with a romantic dinner
+                                                    overlooking the Setúbal and Troia Peninsula, this elegant yacht
+                                                    offers the perfect blend of comfort and sophistication.
+                                                    Sail
+                                                    in style and create unforgettable memories aboard the Azimut 443
+                                                    Atlantis, which offers a refined environment and panoramic views
+                                                    for
+                                                    truly special moments.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="servico-aereo" role="tabpanel"
+                                        aria-labelledby="servico-aereo-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/servico-aereo.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Air Service</h2>
+                                                <p>We offer comprehensive air planning, handling,
+                                                    charters, and fueling services at major airports in Portugal,
+                                                    Angola, Mozambique, and Cape Verde. Our specialized team is
+                                                    ready to ensure a seamless travel experience, from detailed flight
+                                                    coordination to full ground support, ensuring that every step of
+                                                    your journey is efficient and
+                                                    smooth. Whether for commercial or private flights, we are
+                                                    committed to providing excellent service to meet
+                                                    all your air and logistics needs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="servico-concierge" role="tabpanel"
+                                        aria-labelledby="servico-concierge-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/servico-concierge.jpg"
+                                                class="img-fluid">
+                                            <div>
+                                                <h2>Concierge Service</h2>
+                                                <p>Looking for the much-desired Rolex Daytona? Or maybe you want the
+                                                    prestigious tailor CR7, Paulo Battista, to come to your home to
+                                                    adjust your suit? If you are expecting a special friend and would
+                                                    like
+                                                    to receive personalized service, with direct reception at the
+                                                    airplane and escort to the meeting point at the airport, we have
+                                                    the best solutions for you. Ask us and find out how we can
+                                                    offer tailored proposals to meet all your needs with maximum comfort
+                                                    and exclusivity.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="servico-golf" role="tabpanel"
+                                        aria-labelledby="servico-golf-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/servico-golf.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Golf Service</h2>
+                                                <p>Want a worry-free golf experience? We offer a complete service to
+                                                    ensure your day on the golf course is
+                                                    perfect. We start with comfortable transportation to the course,
+                                                    ensuring you arrive relaxed and ready to play. We take care of
+                                                    all reservations, ensuring access to the best courses and times
+                                                    that suit your schedule.
+
+                                                    In addition, we provide a dedicated van to transport your golf
+                                                    equipment, ensuring everything arrives in perfect condition. To top
+                                                    it off, we offer personalized services that
+                                                    meet all your needs, from assistance on the course to
+                                                    recommendations for local golfers. Trust us to provide an
+                                                    unforgettable golf experience, taking care of every detail so you
+                                                    can focus solely on the game.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Transfers Content -->
+                            <div class="tab-pane fade" id="transfers" role="tabpanel"
+                                aria-labelledby="list-transfers-list">
+                                <ul class="nav nav-tabs" id="transfersTab" role="tablist">
+                                    <li class="nav-item">
+                                        <button class="nav-link active" id="transfer-vip-tab" data-bs-toggle="tab"
+                                            data-bs-target="#transfer-vip" type="button" role="tab"
+                                            aria-controls="transfer-vip" aria-selected="true">Transfers</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-3">
+                                    <div class="tab-pane fade show active" id="transfer-vip" role="tabpanel"
+                                        aria-labelledby="transfer-vip-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/transfers.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Transfers</h2>
+                                                <p>We offer an exclusive and comfortable transfer service, tailored
+                                                    to all your transportation needs. In Lisbon,
+                                                    we provide the elegant Mercedes E-Class for up to 4 passengers
+                                                    and the spacious Mercedes Minivan for 7/8 passengers. Whether it's a
+                                                    quick trip to Carnaxide or to more distant destinations like
+                                                    Madrid, we guarantee high-quality and comfortable transport.
+                                                    Additionally, we offer airport check-in assistance for
+                                                    departures, with prior booking and an additional cost.
+
+                                                    <br><br>In Porto, our transfer service includes both the
+                                                    Mercedes
+                                                    E-Class and the Mercedes Minivan, ready to take you to destinations
+                                                    such as Braga, Guimarães, and even Madrid. Airport check-in
+                                                    assistance is also available, providing complete service from your
+                                                    departure.
+
+                                                    <br><br>In the Algarve, we offer transfers from Faro to
+                                                    locations such as
+                                                    Vilamoura and Lagos, as well as to international destinations such
+                                                    as
+                                                    Seville, Gibraltar, and Madrid. With the same quality of service,
+                                                    you
+                                                    can count on comfort and efficiency for each trip. Airport check-in
+                                                    assistance is also available with prior booking,
+                                                    ensuring a smooth and worry-free experience.
+
+                                                    <br><br> Contact us to discover how we can
+                                                    provide a
+                                                    personalized and excellent transportation service for all your
+                                                    travels.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conteúdo Tours -->
+                            <div class="tab-pane fade" id="tours" role="tabpanel" aria-labelledby="list-tours-list">
+                                <ul class="nav nav-tabs" id="toursTab" role="tablist">
+                                    <li class="nav-item">
+                                        <button class="nav-link active" id="tour-lisboa-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-lisboa" type="button" role="tab"
+                                            aria-controls="tour-lisboa" aria-selected="true">Lisbon Tour</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-sintra-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-sintra" type="button" role="tab"
+                                            aria-controls="tour-sintra" aria-selected="false">Sintra Tour</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-estoril-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-estoril" type="button" role="tab"
+                                            aria-controls="tour-estoril" aria-selected="false">Estoril Tour</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-fatima-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-fatima" type="button" role="tab"
+                                            aria-controls="tour-fatima" aria-selected="false">Fátima Tour</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-tomar-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-tomar" type="button" role="tab"
+                                            aria-controls="tour-tomar" aria-selected="false">Tomar Tour</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-arrabida-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-arrabida" type="button" role="tab"
+                                            aria-controls="tour-arrabida" aria-selected="false">Arrábida
+                                            Tour</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-evora-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-evora" type="button" role="tab"
+                                            aria-controls="tour-evora" aria-selected="false">Évora Tour</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="tour-gastronomico-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tour-gastronomico" type="button" role="tab"
+                                            aria-controls="tour-gastronomico" aria-selected="false">Gastronomic
+                                            Tour</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content mt-3">
+                                    <div class="tab-pane fade show active" id="tour-lisboa" role="tabpanel"
+                                        aria-labelledby="tour-lisboa-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/lisbon-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Lisbon Tour</h2>
+                                                <p>Explore the essence of Lisbon starting with São Jorge Castle, the
+                                                    Sé Cathedral, and the Church of Santo António. Wander through
+                                                    the winding streets of Alfama to the Casa dos Bicos, home of the
+                                                    Saramago Foundation. From there, pass by the iconic Praça do
+                                                    Comércio, crossing Chiado and Bairro Alto, before visiting the
+                                                    Parliament and the Casa de Fernando Pessoa. In Belém, indulge in
+                                                    the famous pastéis de Belém, visit the Coach Museum, the
+                                                    Jerónimos Monastery, the Belém Tower, and the Discoveries
+                                                    Monument. If you prefer, we can take you to the Oceanarium, the
+                                                    Parque das Nações, or museums of your choice, such as the
+                                                    Gulbenkian Museum, the Museum of Ancient Art, or the National
+                                                    Azulejo Museum.
+
+                                                    <br><br>We offer various programs in Lisbon, from 4-hour tours
+                                                    to full-day excursions, including stops at major tourist spots
+                                                    like Eduardo VII Park, Marquês de Pombal, Rossio, Sé Cathedral,
+                                                    and São Jorge Castle. For a more comprehensive experience,
+                                                    additional options include a ride on the iconic tram 28, visits
+                                                    to museums and studios, or an unforgettable fado night with
+                                                    dinner. If you prefer, opt for a 4-hour night tour of the city,
+                                                    including transportation and accompaniment to a fado restaurant.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-sintra" role="tabpanel"
+                                        aria-labelledby="tour-sintra-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/sintra-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Sintra Tour</h2>
+                                                <p>Don’t miss exploring the Queluz National Palace and the charming
+                                                    town of Sintra, where you will find the famous Pena Palace, the
+                                                    Moorish Castle, Quinta da Regaleira, and the Royal Palace. A
+                                                    visit to Cabo da Roca, the westernmost point of mainland Europe,
+                                                    is also a must. Following the Atlantic coast, passing through
+                                                    Guincho and Cascais to Lisbon, you can enjoy the local cuisine
+                                                    with sea views, play golf on beautiful courses, or simply enjoy
+                                                    the beaches and Atlantic waves, whether for sunbathing or
+                                                    surfing.
+
+                                                    <br><br>The tours of the region include options of different
+                                                    durations and itineraries. The "Half-day Sintra" (5 hours)
+                                                    starts with a visit to Queluz and continues through Sintra,
+                                                    Cascais, and Estoril, returning to Lisbon via the Marginal Road.
+                                                    The "Sintra Circuit" (9 hours) is more comprehensive, including
+                                                    visits to Pena Palace and stops at various iconic locations such
+                                                    as Cabo da Roca and Guincho. The "Estoril Night" (5 hours) is a
+                                                    nighttime option with departure to Estoril and return via the
+                                                    motorway. For a longer tour, the "Mafra Circuit" (10 hours)
+                                                    includes a visit to Queluz Palace, Mafra Convent, with free time
+                                                    in Ericeira, and continues through Sintra and Guincho before
+                                                    ending in Lisbon.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-estoril" role="tabpanel"
+                                        aria-labelledby="tour-estoril-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/estoril-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Estoril Tour</h2>
+                                                <p>Explore the charm of the Estoril Coast with a 5-hour tour that
+                                                    combines history, elegance, and stunning views of the Portuguese
+                                                    coastline. The tour begins with a meet at the hotel reception,
+                                                    followed by a departure along the famous Marginal Road, one of
+                                                    Portugal’s most scenic routes, which follows the Atlantic coast
+                                                    along the Tagus River. As we progress, you can enjoy panoramic
+                                                    views of the ocean and golden beaches.
+
+                                                    <br><br>The first stop is at the sophisticated town of Estoril,
+                                                    known for its glamorous past and the iconic Estoril Casino, the
+                                                    largest in Europe and inspiration for the famous James Bond
+                                                    novel "Casino Royale". Here, you will have time to explore the
+                                                    casino gardens, stroll along Tamariz Beach, or relax in one of
+                                                    the elegant seaside cafes. The tour may include a visit to the
+                                                    Estoril Palace, a symbol of luxury and history, famous for
+                                                    hosting European royalty during World War II. The excursion
+                                                    continues with a brief visit to the picturesque town of Cascais
+                                                    before returning to Lisbon along the same coastal road, enjoying
+                                                    the stunning late afternoon scenery. Return to the hotel at the
+                                                    end of the tour.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="tour-fatima" role="tabpanel"
+                                        aria-labelledby="tour-fatima-tab">
+                                        <div class="servicosConteudo">
+                                            <img src="../../assets/images/services/fatima-tour.jpg" class="img-fluid">
+                                            <div>
+                                                <h2>Fátima Tour</h2>
+                                                <p>The 10-hour tour to Fátima offers a complete experience, starting
+                                                    with a visit to the Sanctuary of Fátima, where you can attend
+                                                    mass and explore the Basilica, the Chapel of Apparitions, and
+                                                    the new Church of the Holy Trinity. After lunch at the
+                                                    recommended "Tia Alice" restaurant, the tour continues to the
+                                                    Batalha Monastery, Alcobaça, Nazaré, Alfazeirão, and Óbidos,
+                                                    where you can taste the traditional ginjinha. The return to the
+                                                    hotel concludes the day, with the option to include a visit to
+                                                    the Convent of Christ and the Synagogue in Tomar.
+
+                                                    <br><br>The 10-hour itinerary to Tomar also includes a visit to
+                                                    Fátima but initially focuses on the city of Santarém and its
+                                                    historic attractions, such as the Church of S. Estêvão and the
+                                                    Church of Graça. After lunch in Almeirim, the tour proceeds to
+                                                    Almourol Castle and the town of Constância, before reaching
+                                                    Tomar to visit the Convent of Christ and optionally, the
+                                                    Synagogue. The day ends with a visit to the Sanctuary of F
+
+                                                    átima and the homes of the Little Shepherds, returning to the
+                                                    hotel. For a shorter version, there is a 5-hour option that
+                                                    focuses exclusively on the visit to the Sanctuary of Fátima with
+                                                    a direct return to Lisbon. A more extensive alternative includes
+                                                    Coimbra, with visits to the University and other historical
+                                                    points, in addition to Fátima, totaling 10 hours of touring.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="tour-tomar" role="tabpanel" aria-labelledby="tour-tomar-tab">
+                                <div class="servicosConteudo">
+
+                                    <img src="../../assets/images/services/tomar-tour.jpg" class="img-fluid">
+                                    <div>
+                                        <h2>Tour Tomar</h2>
+                                        <p>Explore the rich history and culture of Tomar with a 10-hour tour that
+                                            provides a comprehensive immersion into the region's traditions and
+                                            historical landmarks. The journey begins with a pickup at the hotel
+                                            reception, followed by a drive via the A1 to Santarém. There, you'll be
+                                            guided through the Historic Center, visiting the Church of St. Stephen,
+                                            renowned for the Miracle of the Sacred Host, and the Church of Grace, where
+                                            the remains of the navigator Pedro Álvares Cabral rest. The visit includes a
+                                            stop at the Portas do Sol, which offers a panoramic view over the Tagus
+                                            River. <br><br>
+
+                                            After lunch in Almeirim, where you can savor the traditional "sopa da pedra"
+                                            (stone soup), the tour continues to the Castle of Almourol, situated on a
+                                            small island in the Tagus River, and to Constância, the birthplace of Luís
+                                            de Camões. In Tomar, the highlight is a visit to the imposing Convent of
+                                            Christ, a gem of Templar and Manueline architecture, followed by an optional
+                                            visit to the historic Tomar Synagogue, one of the oldest in Portugal. The
+                                            tour can be customized with an additional visit to the Sanctuary of Fátima,
+                                            where you can see the Basilica and the Chapel of the Apparitions. Return to
+                                            the hotel at the end of the day.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tour-arrabida" role="tabpanel"
+                                aria-labelledby="tour-arrabida-tab">
+                                <div class="servicosConteudo">
+                                    <img src="../../assets/images/services/arrabida-tour.jpg" class="img-fluid">
+                                    <div>
+                                        <h2>Tour Arrábida</h2>
+                                        <p>Discover the breathtaking landscapes and rich culture of the Arrábida region
+                                            with an 8-hour tour that takes you to some of Portugal's most picturesque
+                                            locations. The tour begins with a pickup at the hotel reception, followed by
+                                            a crossing of the April 25th Bridge, offering stunning views of the Tagus
+                                            River and Lisbon. The first stop is in the village of Azeitão, known for its
+                                            vineyards and wine production. Here, you'll have the chance to visit a
+                                            traditional winery, taste regional wines, and sample the famous Azeitão
+                                            cheese tart. <br><br>
+
+                                            The tour then continues through the Arrábida Natural Park, one of Portugal's
+                                            natural treasures, where you can enjoy the unique landscape that combines
+                                            mountains, forest, and the turquoise-blue Atlantic Ocean. We'll make a stop
+                                            to admire the panoramic views from the highest points of the range and visit
+                                            secluded beaches, such as Praia de Galápos or Praia do Portinho da Arrábida,
+                                            known for their crystal-clear waters. The tour proceeds to the historic
+                                            village of Sesimbra, where you can explore its medieval castle and
+                                            picturesque fishing port. Before returning to Lisbon, there will be a stop
+                                            at Cabo Espichel, where dramatic cliffs meet the ocean, providing an
+                                            unforgettable view. Return to the hotel at the end of the day.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tour-evora" role="tabpanel" aria-labelledby="tour-evora-tab">
+                                <div class="servicosConteudo">
+                                    <img src="../../assets/images/services/evora-tour.jpg" class="img-fluid">
+                                    <div>
+                                        <h2>Tour Évora</h2>
+                                        <p>Discover the charming city of Évora and the rich cultural heritage of the
+                                            Alentejo with an 8-hour tour that provides an immersion into the historical
+                                            treasures of this region. The tour begins with a pickup at the hotel
+                                            reception, followed by a serene drive through the tranquil Alentejo
+                                            landscape, known for its vast plains and vineyards. Upon arriving in Évora,
+                                            a UNESCO World Heritage site, the first stop is at the impressive Praça do
+                                            Giraldo, the heart of the city, where you can admire medieval architecture
+                                            and the vibrant atmosphere. <br><br>
+
+                                            The tour includes a visit to the Roman Temple of Évora, also known as the
+                                            Temple of Diana, one of the best-preserved Roman monuments on the Iberian
+                                            Peninsula. Next, explore the intriguing Chapel of Bones, located in the
+                                            Church of São Francisco, one of Évora's most fascinating attractions, where
+                                            walls and columns are decorated with human bones. The journey continues with
+                                            a visit to the Évora Cathedral, one of Portugal's largest medieval
+                                            cathedrals, offering panoramic views of the city. Before returning to
+                                            Lisbon, there will be time for a traditional lunch at a local restaurant,
+                                            where you can savor authentic Alentejo cuisine, known for its rich and
+                                            unique flavors.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tour-gastronomico" role="tabpanel"
+                                aria-labelledby="tour-gastronomico-tab">
+                                <div class="servicosConteudo">
+                                    <img src="../../assets/images/services/gastronomia-tour.jpg" class="img-fluid">
+                                    <div>
+                                        <h2>Tour Gastronómico</h2>
+                                        <p>Option 1 - Cooking Class (9 Hours): Depart from Lisbon along the coast to
+                                            Hotel Albatroz in Cascais, where participants will be welcomed by the Chef
+                                            for a hands-on cooking class. The workshop includes a visit to the local
+                                            market to purchase fresh ingredients for preparing a traditional Portuguese
+                                            recipe. The program includes lunch and wine tasting. Afterwards, the tour
+                                            continues to Sintra for a panoramic visit and a tasting of cheeses and wines
+                                            in the medieval center before returning to the hotel. <br><br>
+
+                                            Option 2 - Discover Sintra (9 Hours): Depart from Lisbon heading to
+                                            Sintra, offering participants free time to explore Portugal's most romantic
+                                            town. The journey continues to Colares for a wine tasting, followed by a
+                                            relaxing lunch.<br><br>
+
+                                            Option 3 - Moscatel Route (9 Hours): Depart from Lisbon towards Azeitão
+                                            to visit the famous José Maria da Fonseca Winery. After a wine tasting, the
+                                            tour includes a visit to an artisanal tile factory and a pass through the
+                                            picturesque fishing village of Sesimbra. Return to Lisbon via the scenic
+                                            Arrábida road, with a stop in Setúbal.<br><br>
+
+                                            Option 4 - Cheese Workshop (9 Hours): Depart from Lisbon to Setúbal for
+                                            a visit to Quinta do Viso, where participants are invited to learn how to
+                                            make the region's traditional cheese. After the workshop, enjoy a
+                                            family-style lunch followed by a drive along the scenic Arrábida road. The
+                                            program includes a Moscatel tasting at the José Maria da Fonseca Winery and
+                                            a visit to an artisanal tile factory before returning to Lisbon.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-top py-3">
+        <div class="footer-container d-flex flex-wrap justify-content-between align-items-center ">
+            <p class="col-md-5 mb-0 ">© 2024 Soc. de Táxis Fortes, Lda All rights reserved</p>
+
+            <div
+                class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <a href="../">
+                    <img src="../../assets/images/logos/Logo-semtxt-sem-fundo.png" alt="">
+                </a>
+            </div>
+
+            <ul class=" nav col-md-5 justify-content-end">
+                <li class="nav-item"><a href="../Terms-Condicions/" class="nav-link px-2 ">Terms and Conditions</a></li>
+                <li class="nav-item"><a href="../Privacy-Policy/" class="nav-link px-2 ">Privacy Policy</a></li>
+                <li class="nav-item"><a href="https://www.livroreclamacoes.pt" class="nav-link px-2 "
+                        target="_blank">Complaints Book</a></li>
+            </ul>
+        </div>
+    </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../../script.js"></script>
+
+</body>
+
+</html>

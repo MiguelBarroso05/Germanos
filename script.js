@@ -1,3 +1,4 @@
+const urlParams = new URLSearchParams(window.location.search);
 const heroDiv = document.getElementById('hero');
 const imagens = ['hero1.jpg', 'hero2.jpg', 'hero3.jpg'];
 let index = 0;
@@ -7,7 +8,12 @@ function trocarBackground() {
     heroDiv.classList.add('fade-out');
 
     setTimeout(() => {
+        if(window.location.pathname === '/EN/') {
+            heroDiv.style.backgroundImage = `url(../assets/images/home/${imagens[index]})`;
+        }else
         heroDiv.style.backgroundImage = `url(./assets/images/home/${imagens[index]})`;
+
+
         index = (index + 1) % imagens.length;
 
         heroDiv.classList.remove('fade-out');
@@ -15,15 +21,14 @@ function trocarBackground() {
     }, 400); // Tempo da transição (deve ser igual ao tempo definido em CSS!!)
 }
 
-// Verifica se está na página principal
-if (window.location.pathname === '/') {
+// Verifica se está na página principal em PT ou EN
+if (window.location.pathname === '/' || window.location.pathname === '/EN/') {
     setInterval(trocarBackground, 8000);
-    trocarBackground();
+    trocarBackground();    
 }
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const urlParams = new URLSearchParams(window.location.search);
     const tab = urlParams.get('tab');
     const tabButton = document.querySelector(`#${tab}-tab`);
     const tabContent = document.querySelector(`#${tab}`);
@@ -58,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         tabButton.setAttribute('aria-selected', 'true');
         tabContent.classList.add('show', 'active');
     }
-    else if (tab == "tour-lisboa" || tab == "tour-sintra" || tab == "tour-estoril" || tab == "tour-fatima" || tab == "tour-tomar" || tab == "tour-arrabida" || tab == "tour-evora"){
+    else if (tab == "tour-lisboa" || tab == "tour-sintra" || tab == "tour-estoril" || tab == "tour-fatima" || tab == "tour-tomar" || tab == "tour-arrabida" || tab == "tour-evora" || tab == "tour-gastronomico"){
         const tabButtonRemove = document.querySelector(`#tour-lisboa-tab`);
         const tabContentRemove = document.querySelector(`#tour-lisboa`);
         const sideButton = document.querySelector(`#list-tours-list`);
