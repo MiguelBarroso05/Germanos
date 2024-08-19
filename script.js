@@ -22,7 +22,7 @@ function trocarBackground() {
 }
 
 // Verifica se está na página principal em PT ou EN
-if (window.location.pathname === '/' || window.location.pathname === '/EN/' || window.location.pathname == '/germanos/') {
+if (window.location.pathname === '/' || window.location.pathname === '/EN/' || window.location.pathname == '/Germanos/') {
     setInterval(trocarBackground, 8000);
     trocarBackground();    
 }
