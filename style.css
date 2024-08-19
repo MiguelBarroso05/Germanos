@@ -278,8 +278,19 @@ footer {
     justify-content: space-between;
 }
 
+.card-img-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top img {
+    max-width: 100%;
+    height: auto;
+}
+
 .cardServicos .card {
-    width: 24rem;
+    width: 24%;
     height: 27rem;
 }
 
@@ -292,12 +303,10 @@ footer {
 }
 
 .images {
-    height: 25rem;
     transition: transform 0.4s ease-in-out;
 }
 
 .recImages {
-    height: 16rem;
     transition: transform 0.4s ease-in-out;
 }
 
@@ -309,8 +318,9 @@ footer {
     justify-content: space-between;
 }
 
+
 .cardTransfers .card {
-    width: 32.5rem;
+    width: 32.3%;
     height: 24rem;
 }
 
@@ -323,7 +333,7 @@ footer {
 }
 
 .cardTour .card {
-    width: 24rem;
+    width: 24%;
     height: 27rem;
     margin-bottom: 2rem;
 }
@@ -701,56 +711,57 @@ main .condicoesGerais {
     }
 
     .golf p {
-        margin: 5%;
+        margin: 5% 5% 0 5%;
     }
 
     .golf button {
-        height: 5rem;
         font-size: 2rem;
         width: 200px !important;
         margin-left: 25% !important;
         height: 3.5rem !important;
     }
 
+    /* Servicos, Transfers, Tours */
+    .card-img-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img-top img {
+        max-width: 100%;
+        height: auto;
+    }
+
     .cardServicos {
-        display: inline-flex;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .cardServicos .card {
-        width: 40% !important;
+        width: 48%;
         margin-bottom: 2rem;
-    }
-
-    .cardServicos .card img{
-        width: 28rem;
     }
 
     .cardTransfers{
         display: flex;
         flex-direction: column;
         align-items: center !important;
-        justify-content: none !important;
     }
 
     .cardTransfers .card {
-        width: 28rem;
+        width: 100%;
         margin-bottom: 2rem;
     }
 
     .cardTour {
         display: flex;
-        flex-direction: column;
-        align-items: center !important;
-        justify-content: none !important;
+        flex-wrap: wrap;
     }
 
     .cardTour .card {
-        width: 28rem;
+        width: 48%;
         margin-bottom: 2rem;
-    }
-
-    .cardTour .card img{
-        width: 28rem;
     }
 
 
@@ -809,18 +820,16 @@ main .condicoesGerais {
     .condicoesGerais {
         display: flex;
         flex-direction: column;
+        justify-items: center !important;
     }
 
     .precarioInfo {
         width: 100%;
     }
 
-    .precarioInfoCenter {
-        margin-left: 5%;
-    }
     
     .alignRight {
-        padding-left: 0% !important;
+        padding-left: 32px !important;
     }
 
 
@@ -832,6 +841,12 @@ main .condicoesGerais {
 
     .info {
         margin: 1rem;
+    }
+    
+    
+    /* Terms & Policies */
+    .politicaTermos {
+        margin-top: 1rem;
     }
 }
 
@@ -922,11 +937,27 @@ main .condicoesGerais {
     }
 
     .golf button {
-        height: 5rem;
         font-size: 2rem;
         width: 200px !important;
         margin-left: 25% !important;
         height: 3.5rem !important;
+    }
+
+    /* Servicos, Transfers, Tours */
+    .servicos .titulo, .transfers .titulo, .tours .titulo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-img-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img-top img {
+        max-width: 100%;
+        height: auto;
     }
 
     .cardServicos {
@@ -937,12 +968,8 @@ main .condicoesGerais {
     }
 
     .cardServicos .card {
-        width: 28rem;
+        width: 90%;
         margin-bottom: 2rem;
-    }
-
-    .cardServicos .card img{
-        width: 28rem;
     }
 
     .cardTransfers{
@@ -953,7 +980,7 @@ main .condicoesGerais {
     }
 
     .cardTransfers .card {
-        width: 28rem;
+        width: 90%;
         margin-bottom: 2rem;
     }
 
@@ -965,12 +992,8 @@ main .condicoesGerais {
     }
 
     .cardTour .card {
-        width: 28rem;
+        width: 90%;
         margin-bottom: 2rem;
-    }
-
-    .cardTour .card img{
-        width: 28rem;
     }
 
 
@@ -1029,18 +1052,16 @@ main .condicoesGerais {
     .condicoesGerais {
         display: flex;
         flex-direction: column;
+        justify-items: center !important;
     }
 
     .precarioInfo {
         width: 100%;
     }
 
-    .precarioInfoCenter {
-        margin-left: 5%;
-    }
     
     .alignRight {
-        padding-left: 0% !important;
+        padding-left: 32px !important;
     }
 
 
@@ -1052,5 +1073,11 @@ main .condicoesGerais {
 
     .info {
         margin: 1rem;
+    }
+
+
+    /* Terms & Policies */
+    .politicaTermos {
+        margin-top: 1rem;
     }
 }
