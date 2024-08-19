@@ -714,13 +714,10 @@ main .condicoesGerais {
 
     .cardServicos {
         display: inline-flex;
-        flex-direction: column;
-        align-items: center !important;
-        justify-content: none !important;
     }
 
     .cardServicos .card {
-        width: 28rem;
+        width: 40% !important;
         margin-bottom: 2rem;
     }
 
