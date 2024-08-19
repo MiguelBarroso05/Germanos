@@ -22,11 +22,11 @@ function trocarBackground() {
 }
 
 // Verifica se está na página principal em PT ou EN
-if (window.location.pathname === '/' || window.location.pathname === '/EN/' || window.location.pathname == '/Germanos/') {
-    setInterval(trocarBackground, 8000);
-    trocarBackground();    
-}
-
+/*if (window.location.pathname === '/' || window.location.pathname === '/EN/' || window.location.pathname == '/Germanos/') {
+    }*/
+   setInterval(trocarBackground, 8000);
+   trocarBackground();    
+   
 
 document.addEventListener("DOMContentLoaded", function() {
     const tab = urlParams.get('tab');
