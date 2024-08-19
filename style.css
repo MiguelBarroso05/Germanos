@@ -701,7 +701,7 @@ main .condicoesGerais {
     }
 
     .golf p {
-        display: none;
+        margin: 5%;
     }
 
     .golf button {
@@ -713,7 +713,7 @@ main .condicoesGerais {
     }
 
     .cardServicos {
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
         align-items: center !important;
         justify-content: none !important;
@@ -880,6 +880,14 @@ main .condicoesGerais {
     .footer-container p {
         font-size: 0.85rem !important;
         margin: 4rem 0 -2.5rem 0 !important;
+    }
+
+    .col-md-5, .col-md-2 {
+        width: 100% !important;
+    }
+
+    .col-md-5 {
+        justify-content: center;
     }
 
 
