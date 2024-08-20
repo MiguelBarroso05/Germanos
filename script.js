@@ -77,10 +77,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+let index = 0;
 function trocarBackground() {
     const heroDiv = document.getElementById('hero');
     const imagens = ['hero1.jpg', 'hero2.jpg', 'hero3.jpg'];
-    let index = 0;
 
     heroDiv.classList.remove('fade-in');
     heroDiv.classList.add('fade-out');
