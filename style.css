@@ -587,6 +587,10 @@ main .condicoesGerais {
     display: inline-flex;
 }
 
+.info a {
+    text-decoration: none;
+}
+
 .info svg {
     border-radius: 6px;
     height: 2rem;
@@ -630,6 +634,7 @@ main .condicoesGerais {
         font-size: 0.9rem !important;
     }
 }
+
 
 /* Media Query Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
