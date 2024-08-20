@@ -1,35 +1,14 @@
-const urlParams = new URLSearchParams(window.location.search);
-const heroDiv = document.getElementById('hero');
-const imagens = ['hero1.jpg', 'hero2.jpg', 'hero3.jpg'];
-let index = 0;
+window.onload = function() {
+    setTimeout(function() {
+        document.querySelector('.promoInfo').classList.add('show');
+    }, 600); // 1000ms = 1s
 
-function trocarBackground() {
-    heroDiv.classList.remove('fade-in');
-    heroDiv.classList.add('fade-out');
+    ajustarFooter();
+};
 
-    setTimeout(() => {
-        if(window.location.pathname === '/GERMANOS/EN/') {
-            heroDiv.style.backgroundImage = `url(../assets/images/home/${imagens[index]})`;
-        }else
-
-        heroDiv.style.backgroundImage = `url(./assets/images/home/${imagens[index]})`;
-
-        index = (index + 1) % imagens.length;
-
-        heroDiv.classList.remove('fade-out');
-        heroDiv.classList.add('fade-in');
-    }, 400); // Tempo da transição (deve ser igual ao tempo definido em CSS!!)
-}
-
-// Verifica se está na página principal em PT ou EN
-/*if (window.location.pathname === '/' || window.location.pathname === '/EN/' || window.location.pathname == '/Germanos/') {
-    }*/
-   
-setInterval(trocarBackground, 8000);
-trocarBackground();    
-   
 
 document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
     const tab = urlParams.get('tab');
     const tabButton = document.querySelector(`#${tab}-tab`);
     const tabContent = document.querySelector(`#${tab}`);
@@ -87,17 +66,57 @@ document.addEventListener("DOMContentLoaded", function() {
         tabContent.classList.add('show', 'active');
     }
 
-    if (window.location.pathname.endsWith("index.html")) {
+    const path = window.location.pathname.toLowerCase();
+    if (path.endsWith('index.html')) {
         const newUrl = window.location.pathname.replace("index.html", "");
-    
         history.replaceState(null, "", newUrl);
     }
 });
 
 
+function trocarBackground() {
+    const heroDiv = document.getElementById('hero');
+    const imagens = ['hero1.jpg', 'hero2.jpg', 'hero3.jpg'];
+    let index = 0;
 
-window.onload = function() {
-    setTimeout(function() {
-        document.querySelector('.promoInfo').classList.add('show');
-    }, 600); // 1000ms = 1s
-  };
+    heroDiv.classList.remove('fade-in');
+    heroDiv.classList.add('fade-out');
+
+    setTimeout(() => {
+        if(window.location.pathname === '/GERMANOS/EN/') {
+            heroDiv.style.backgroundImage = `url(../assets/images/home/${imagens[index]})`;
+        }else
+
+        heroDiv.style.backgroundImage = `url(./assets/images/home/${imagens[index]})`;
+
+        index = (index + 1) % imagens.length;
+
+        heroDiv.classList.remove('fade-out');
+        heroDiv.classList.add('fade-in');
+    }, 400); // Tempo da transição (deve ser igual ao tempo definido em CSS!!)
+}
+
+
+function ajustarFooter() {
+    const navList = document.querySelector('.nav.col-md-5');
+
+    if (navList) {
+        if (window.innerWidth < 1200) {
+            navList.classList.remove('justify-content-end');
+        } 
+        else {
+            navList.classList.add('justify-content-end');
+        }
+    }
+}
+
+// Verifica se está na página principal em PT ou EN
+/*if (window.location.pathname === '/' || window.location.pathname === '/EN/' || window.location.pathname == '/Germanos/') {
+    }*/
+   
+setInterval(trocarBackground, 8000);
+trocarBackground();    
+
+window.addEventListener('load', ajustarFooter);
+window.addEventListener('resize', ajustarFooter);
+

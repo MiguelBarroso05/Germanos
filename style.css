@@ -4,6 +4,7 @@
 @font-face {
     font-family: 'Caviar';
     src: url('./assets/fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
+    src: url('https://miguelbarroso05.github.io/Germanos/assets/fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,6 +12,8 @@
 @font-face {
     font-family: 'CaviarBold';
     src: url('./assets/fonts/caviar_dreams/CaviarDreams_Bold.ttf') format('truetype');
+    src: url('https://miguelbarroso05.github.io/Germanos/assets/fonts/caviar_dreams/CaviarDreams_Bold.ttf') format('truetype');
+
     font-weight: Bold;
     font-style: normal;
 }
@@ -18,6 +21,7 @@
 @font-face {
     font-family: 'Cormorant';
     src: url('./assets/fonts/Cormorant/Cormorant-VariableFont_wght.ttf') format('truetype');
+    src: url('https://miguelbarroso05.github.io/Germanos/assets/fonts/caviar_dreams/Cormorant-VariableFont_wght.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
@@ -685,10 +689,6 @@ main .condicoesGerais {
         justify-content: center;
     }
 
-    .footerCenter {
-        justify-content: center !important;
-    }
-
 
     /* Home */
     /* Promo */
@@ -1100,8 +1100,7 @@ main .condicoesGerais {
 }
 
 
-
-
+/* Media Query Mobile */
 @media only screen and (max-width: 382px) {
     .footer-container a img {
         margin-top: -6.5rem;
