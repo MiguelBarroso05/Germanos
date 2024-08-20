@@ -1,6 +1,9 @@
 window.onload = function() {
     setTimeout(function() {
-        document.querySelector('.promoInfo').classList.add('show');
+        let run = document.querySelector('.promoInfo');
+        if (run) {
+            run.classList.add('show');
+        }
     }, 600); // 1000ms = 1s
 
     ajustarFooter();
@@ -110,12 +113,13 @@ function ajustarFooter() {
     }
 }
 
-// Verifica se está na página principal em PT ou EN
-/*if (window.location.pathname === '/' || window.location.pathname === '/EN/' || window.location.pathname == '/Germanos/') {
-    }*/
-   
-setInterval(trocarBackground, 8000);
-trocarBackground();    
+// Verifica se está na página principal
+let run = document.querySelector('.promoInfo');
+
+if (run) {
+    setInterval(trocarBackground, 8000);
+    trocarBackground();    
+}
 
 window.addEventListener('load', ajustarFooter);
 window.addEventListener('resize', ajustarFooter);
