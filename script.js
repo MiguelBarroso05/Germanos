@@ -8,11 +8,11 @@ function trocarBackground() {
     heroDiv.classList.add('fade-out');
 
     setTimeout(() => {
-        if(window.location.pathname === '/EN/') {
+        if(window.location.pathname === '/GERMANOS/EN/') {
             heroDiv.style.backgroundImage = `url(../assets/images/home/${imagens[index]})`;
         }else
-        heroDiv.style.backgroundImage = `url(./assets/images/home/${imagens[index]})`;
 
+        heroDiv.style.backgroundImage = `url(./assets/images/home/${imagens[index]})`;
 
         index = (index + 1) % imagens.length;
 
@@ -24,8 +24,9 @@ function trocarBackground() {
 // Verifica se está na página principal em PT ou EN
 /*if (window.location.pathname === '/' || window.location.pathname === '/EN/' || window.location.pathname == '/Germanos/') {
     }*/
-   setInterval(trocarBackground, 8000);
-   trocarBackground();    
+   
+setInterval(trocarBackground, 8000);
+trocarBackground();    
    
 
 document.addEventListener("DOMContentLoaded", function() {

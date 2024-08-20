@@ -685,6 +685,10 @@ main .condicoesGerais {
         justify-content: center;
     }
 
+    .footerCenter {
+        justify-content: center !important;
+    }
+
 
     /* Home */
     /* Promo */
@@ -698,6 +702,7 @@ main .condicoesGerais {
     }
 
     .promoInfo button {
+        color: black !important;
         font-size: 1.7rem;
         margin: 7rem 0 0 7.5%;
     }
@@ -720,6 +725,7 @@ main .condicoesGerais {
     }
 
     .golf button {
+        color: black !important;
         font-size: 2rem;
         width: 200px !important;
         margin-left: 25% !important;
@@ -922,6 +928,7 @@ main .condicoesGerais {
     }
 
     .promoInfo button {
+        color: black !important;
         font-size: 1.7rem;
         margin: 7rem 0 0 7.5%;
     }
@@ -944,6 +951,7 @@ main .condicoesGerais {
     }
 
     .golf button {
+        color: black !important;
         font-size: 2rem;
         width: 200px !important;
         margin-left: 25% !important;
