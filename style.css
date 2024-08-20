@@ -21,7 +21,7 @@
 @font-face {
     font-family: 'Cormorant';
     src: url('./assets/fonts/Cormorant/Cormorant-VariableFont_wght.ttf') format('truetype');
-    src: url('https://miguelbarroso05.github.io/Germanos/assets/fonts/caviar_dreams/Cormorant-VariableFont_wght.ttf') format('truetype');
+    src: url('https://miguelbarroso05.github.io/Germanos/assets/fonts/Cormorant/Cormorant-VariableFont_wght.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
