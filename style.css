@@ -1101,4 +1101,8 @@ main .condicoesGerais {
     .footer-container a img {
         margin-top: -6.5rem;
     }
+
+    .buttons {
+        width: 85%;
+    }
 }

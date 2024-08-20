@@ -84,13 +84,14 @@ function trocarBackground() {
 
     heroDiv.classList.remove('fade-in');
     heroDiv.classList.add('fade-out');
+    let regex = /\/EN/;
 
     setTimeout(() => {
-        if(window.location.pathname === '/GERMANOS/EN/') {
+        if(regex.test(window.location.pathname)) {
             heroDiv.style.backgroundImage = `url(../assets/images/home/${imagens[index]})`;
-        }else
-
-        heroDiv.style.backgroundImage = `url(./assets/images/home/${imagens[index]})`;
+        } else {
+            heroDiv.style.backgroundImage = `url(./assets/images/home/${imagens[index]})`;
+        }
 
         index = (index + 1) % imagens.length;
 
@@ -123,4 +124,3 @@ if (run) {
 
 window.addEventListener('load', ajustarFooter);
 window.addEventListener('resize', ajustarFooter);
-
