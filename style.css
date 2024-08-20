@@ -14,12 +14,15 @@
     font-weight: Bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Cormorant';
     src: url('./assets/fonts/Cormorant/Cormorant-VariableFont_wght.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
-};
+}
+
+;
 
 .lobster-regular {
     font-family: "Lobster", sans-serif;
@@ -96,7 +99,7 @@
 /* Body */
 body {
     font-family: 'Cormorant', sans-serif !important;
-    font-size: 1.1rem !important;	
+    font-size: 1.1rem !important;
     background-color: #282423 !important;
     display: flex;
     flex-direction: column;
@@ -211,9 +214,9 @@ footer {
 
 }
 
-.promoInfo.show{
+.promoInfo.show {
     opacity: 1;
-} 
+}
 
 .promoInfo h1 {
     color: white;
@@ -593,7 +596,7 @@ main .condicoesGerais {
     background: var(--mainColor);
 }
 
-.info .whatsapp{
+.info .whatsapp {
     height: 2.5rem;
     margin-top: -8px;
 }
@@ -631,13 +634,14 @@ main .condicoesGerais {
 
 /* Media Query Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-/* All */
+
+    /* All */
     /* Navbar */
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23ffefae' stroke-width='2' viewBox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='3' y1='12' x2='21' y2='12'/%3e%3cline x1='3' y1='6' x2='21' y2='6'/%3e%3cline x1='3' y1='18' x2='21' y2='18'/%3e%3c/svg%3e") !important;
     }
 
-    .navbar-toggler:focus, 
+    .navbar-toggler:focus,
     .navbar-toggler:active {
         border: 2px solid #ffefae;
     }
@@ -645,7 +649,7 @@ main .condicoesGerais {
     .navbar-toggler {
         box-shadow: none !important;
     }
-       
+
     .nav-item a {
         text-align: center;
     }
@@ -658,7 +662,7 @@ main .condicoesGerais {
         justify-content: center !important;
         text-align: center;
     }
-    
+
     .footer-container img {
         margin-top: -5rem;
     }
@@ -672,7 +676,8 @@ main .condicoesGerais {
         margin: 4rem 0 -1.8rem 0 !important;
     }
 
-    .col-md-5, .col-md-2 {
+    .col-md-5,
+    .col-md-2 {
         width: 100% !important;
     }
 
@@ -691,7 +696,7 @@ main .condicoesGerais {
         font-size: 3rem;
         margin: 15rem 0 0 7.5%;
     }
-    
+
     .promoInfo button {
         font-size: 1.7rem;
         margin: 7rem 0 0 7.5%;
@@ -743,7 +748,7 @@ main .condicoesGerais {
         margin-bottom: 2rem;
     }
 
-    .cardTransfers{
+    .cardTransfers {
         display: flex;
         flex-direction: column;
         align-items: center !important;
@@ -774,11 +779,11 @@ main .condicoesGerais {
         height: 20rem;
     }
 
-    .carousel-item h5{
+    .carousel-item h5 {
         font-size: 1rem;
     }
 
-    .carousel-item p{
+    .carousel-item p {
         display: none;
     }
 
@@ -791,13 +796,13 @@ main .condicoesGerais {
         flex-direction: column;
     }
 
-    .ofertas ul{
+    .ofertas ul {
         margin: 0;
     }
 
 
     /* Services */
-    .mainServicos .row{
+    .mainServicos .row {
         justify-content: center;
     }
 
@@ -827,7 +832,7 @@ main .condicoesGerais {
         width: 100%;
     }
 
-    
+
     .alignRight {
         padding-left: 32px !important;
     }
@@ -842,8 +847,8 @@ main .condicoesGerais {
     .info {
         margin: 1rem;
     }
-    
-    
+
+
     /* Terms & Policies */
     .politicaTermos {
         margin-top: 1rem;
@@ -853,13 +858,14 @@ main .condicoesGerais {
 
 /* Media Query Mobile */
 @media only screen and (max-width: 768px) {
+
     /* All */
     /* Navbar */
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23ffefae' stroke-width='2' viewBox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='3' y1='12' x2='21' y2='12'/%3e%3cline x1='3' y1='6' x2='21' y2='6'/%3e%3cline x1='3' y1='18' x2='21' y2='18'/%3e%3c/svg%3e") !important;
     }
 
-    .navbar-toggler:focus, 
+    .navbar-toggler:focus,
     .navbar-toggler:active {
         border: 2px solid #ffefae;
     }
@@ -867,7 +873,7 @@ main .condicoesGerais {
     .navbar-toggler {
         box-shadow: none !important;
     }
-       
+
     .nav-item a {
         text-align: center;
     }
@@ -880,7 +886,7 @@ main .condicoesGerais {
         justify-content: center !important;
         text-align: center;
     }
-    
+
     .footer-container img {
         margin-top: -4rem;
     }
@@ -894,7 +900,8 @@ main .condicoesGerais {
         margin: 4rem 0 -2.5rem 0 !important;
     }
 
-    .col-md-5, .col-md-2 {
+    .col-md-5,
+    .col-md-2 {
         width: 100% !important;
     }
 
@@ -913,7 +920,7 @@ main .condicoesGerais {
         font-size: 3rem;
         margin: 15rem 0 0 7.5%;
     }
-    
+
     .promoInfo button {
         font-size: 1.7rem;
         margin: 7rem 0 0 7.5%;
@@ -944,7 +951,9 @@ main .condicoesGerais {
     }
 
     /* Servicos, Transfers, Tours */
-    .servicos .titulo, .transfers .titulo, .tours .titulo {
+    .servicos .titulo,
+    .transfers .titulo,
+    .tours .titulo {
         display: flex;
         justify-content: center;
     }
@@ -972,7 +981,7 @@ main .condicoesGerais {
         margin-bottom: 2rem;
     }
 
-    .cardTransfers{
+    .cardTransfers {
         display: flex;
         flex-direction: column;
         align-items: center !important;
@@ -1006,11 +1015,11 @@ main .condicoesGerais {
         height: 20rem;
     }
 
-    .carousel-item h5{
+    .carousel-item h5 {
         font-size: 1rem;
     }
 
-    .carousel-item p{
+    .carousel-item p {
         display: none;
     }
 
@@ -1023,13 +1032,13 @@ main .condicoesGerais {
         flex-direction: column;
     }
 
-    .ofertas ul{
+    .ofertas ul {
         margin: 0;
     }
 
 
     /* Services */
-    .mainServicos .row{
+    .mainServicos .row {
         justify-content: center;
     }
 
@@ -1059,7 +1068,7 @@ main .condicoesGerais {
         width: 100%;
     }
 
-    
+
     .alignRight {
         padding-left: 32px !important;
     }
@@ -1079,5 +1088,14 @@ main .condicoesGerais {
     /* Terms & Policies */
     .politicaTermos {
         margin-top: 1rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 382px) {
+    .footer-container a img {
+        margin-top: -6.5rem;
     }
 }
