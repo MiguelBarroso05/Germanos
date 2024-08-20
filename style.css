@@ -274,31 +274,17 @@ footer {
 }
 
 
-/* Section Serviços */
-.cardServicos {
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
-}
-
+/* Cards */
 .card-img-top {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .card-img-top img {
     max-width: 100%;
     height: auto;
-}
-
-.cardServicos .card {
-    width: 24%;
-    height: 27rem;
-}
-
-.card-img-top {
-    overflow: hidden;
 }
 
 .card-img-top img:hover {
@@ -311,6 +297,19 @@ footer {
 
 .recImages {
     transition: transform 0.4s ease-in-out;
+}
+
+
+/* Section Serviços */
+.cardServicos {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.cardServicos .card {
+    width: 24%;
+    height: 27rem;
 }
 
 
@@ -948,7 +947,7 @@ main .condicoesGerais {
 
     .golf button {
         color: black !important;
-        font-size: 2rem;
+        font-size: 1.9rem;
         width: 200px !important;
         margin-left: 25% !important;
         height: 3.5rem !important;
@@ -981,7 +980,7 @@ main .condicoesGerais {
     }
 
     .cardServicos .card {
-        width: 90%;
+        width: 87%;
         margin-bottom: 2rem;
     }
 
@@ -993,7 +992,7 @@ main .condicoesGerais {
     }
 
     .cardTransfers .card {
-        width: 90%;
+        width: 87%;
         margin-bottom: 2rem;
     }
 
@@ -1005,7 +1004,7 @@ main .condicoesGerais {
     }
 
     .cardTour .card {
-        width: 90%;
+        width: 87%;
         margin-bottom: 2rem;
     }
 
