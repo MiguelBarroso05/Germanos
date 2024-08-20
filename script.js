@@ -89,8 +89,10 @@ function trocarBackground() {
     setTimeout(() => {
         if(regex.test(window.location.pathname)) {
             heroDiv.style.backgroundImage = `url(../assets/images/home/${imagens[index]})`;
+            console.log("teste1");
         } else {
             heroDiv.style.backgroundImage = `url(./assets/images/home/${imagens[index]})`;
+            console.log("teste2");
         }
 
         index = (index + 1) % imagens.length;
