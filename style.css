@@ -980,7 +980,7 @@ main .condicoesGerais {
     }
 
     .cardServicos .card {
-        width: 87%;
+        width: 90%;
         margin-bottom: 2rem;
     }
 
@@ -992,7 +992,7 @@ main .condicoesGerais {
     }
 
     .cardTransfers .card {
-        width: 87%;
+        width: 90%;
         margin-bottom: 2rem;
     }
 
@@ -1004,7 +1004,7 @@ main .condicoesGerais {
     }
 
     .cardTour .card {
-        width: 87%;
+        width: 90%;
         margin-bottom: 2rem;
     }
 
@@ -1103,5 +1103,9 @@ main .condicoesGerais {
 
     .buttons {
         width: 85%;
+    }
+
+    .golf button {
+        width: 100% !important;
     }
 }
