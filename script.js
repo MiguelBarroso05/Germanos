@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         tabButton.setAttribute('aria-selected', 'true');
         tabContent.classList.add('show', 'active');
     }
-    else if (tab == "tour-lisboa" || tab == "tour-sintra" || tab == "tour-estoril" || tab == "tour-fatima" || tab == "tour-tomar" || tab == "tour-arrabida" || tab == "tour-evora" || tab == "tour-gastronomico"){
+    else if (tab == "tour-lisboa" || tab == "tour-sintra" || tab == "tour-estoril" || tab == "tour-fatima" || tab == "tour-vinho" || tab == "tour-arrabida" || tab == "tour-evora" || tab == "tour-gastronomico"){
         const tabButtonRemove = document.querySelector(`#tour-lisboa-tab`);
         const tabContentRemove = document.querySelector(`#tour-lisboa`);
         const sideButton = document.querySelector(`#list-tours-list`);
